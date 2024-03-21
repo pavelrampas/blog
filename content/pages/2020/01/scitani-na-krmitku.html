@@ -1,0 +1,40 @@
+{% extends "templates/layout.html" %}
+{% block title %}Sčítání na krmítku{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Sčítání na krmítku{% endblock description %}
+{% block content %}
+<article>
+    <h2>Sčítání na krmítku</h2>
+    <p class="article-meta">
+        <time datetime="2020-01-12">12. 01. 2020</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/internet/">Internet</a>,
+            <a href="/kategorie/zahrada/">Zahrada</a>
+        </span>
+    </p>
+    <p>Letos jsem se poprvé zapojil do <a href="https://ptacihodinka.birdlife.cz/" target="_blank" rel="noopener noreferrer">sčítání ptáků na krmítku</a>
+        a&nbsp;účast ptactva byla hojná.
+    </p>
+    <ul>
+        <li>vrabec polní: 13</li>
+        <li>kos černý: 3</li>
+        <li>hýl obecný: 6</li>
+        <li>sýkora koňadra: 6</li>
+        <li>sýkora modřinka: 1</li>
+        <li>červenka obecná: 1</li>
+        <li>zvonek zelený: 2</li>
+        <li>brhlík lesní: 1</li>
+        <li>krahujec obecný: 1</li>
+    </ul>
+    <p>
+        <a href="/img/2020/01/scitani-na-krmitku/krahujec.jpg">
+            <img alt="Krahujec." src="/img/2020/01/scitani-na-krmitku/krahujec-580.jpg" class="img-responsive" width="580" height="346">
+        </a>
+    </p>
+</article>
+<nav class="nav-next-prev">
+    <a href="/2019/12/kalendar-2020/">« Kalendář 2020</a>
+    <a href="/2020/10/proc-spime/">Proč spíme »</a>
+</nav>
+{% endblock content %}

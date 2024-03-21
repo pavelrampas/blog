@@ -1,0 +1,70 @@
+{% extends "templates/layout.html" %}
+{% block title %}Raspberry Pi – Raspbian instalace{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Raspberry Pi – Raspbian instalace{% endblock description %}
+{% block content %}
+<article>
+    <h2>Raspberry Pi – Raspbian instalace</h2>
+    <p class="article-meta">
+        <time datetime="2013-09-06">06. 09. 2013</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/raspberry-pi/">Raspberry Pi</a>
+        </span>
+    </p>
+    <p>
+        Nový článek o&nbsp;instalaci Raspbianu najdete na&nbsp;<a href="http://raspberry.pavelrampas.cz/raspbian">http://raspberry.pavelrampas.cz/raspbian</a>
+    </p>
+    <p>
+        Jako operační systém pro mé Raspberry jsem zvolil Raspbian. Instalace je následující. Napřed je zapotřebí stáhnout Raspbian
+        ze stránek <a href="http://www.raspberrypi.org/downloads">raspberrypi.org</a>. Po rozbalení souboru získáme obraz,
+        který je potřeba nahrát na SD kartu. Z&nbsp;Windows to lze udělat pomocí
+        programu <a href="http://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a>, kterým je také možné později
+        vytvářet zálohy systému. Po nahrání Raspbianu stačí kartu zasunout do Raspberry a&nbsp;zapnout.
+    </p>
+    <p>
+        Po prvním spuštění se zobrazí konfigurace systému. Toto okno lze vyvolat i&nbsp;později příkazem „raspi-config“. Položky v&nbsp;nastavení jsou:
+    </p>
+    <ul>
+        <li>
+            Expand Filesystem – Po nakopírování na SD kartu využívá Raspbian pouze malou část celkové kapacity.
+            Touto volbou bude využívat celou kapacitu karty.
+        </li>
+        <li>
+            Change User Password – Je jasné, že jde o&nbsp;změnu hesla.
+        </li>
+        <li>
+            Enable Boot to Desktop – Navolení jestli se má Raspbian spouštět v&nbsp;grafickém nebo textovém režimu.
+        </li>
+        <li>
+            Internationalisation Options – Zde se skrývají tři volby. Nastavení jazyka, kde je vhodné ponechat
+            angličtinu a&nbsp;přidat češtinu „cs_CZ.UTF-8 UTF-8”, kterou pak stačí nastavit jako výchozí.
+            Další je volba časového pásma. Poslední se nastavuje rozložení klávesnice. Typ klávesnice jsem
+            ponechal na „Generic 105-key (Intl) PC“. Rozložení jsem pak zvolil „Czech – Czech (with &lt;\|&gt; key)“, které má klávesu Z&nbsp;nahoře.
+        </li>
+        <li>
+            Enable Camera – Povolení kamery.
+        </li>
+        <li>
+            Add to Rastrack – Přidání vašeho Raspberry na <a href="http://rastrack.co.uk/">mapu</a>.
+        </li>
+        <li>
+            Overclock – Možnost zvýšení frekvence procesoru. Výchozí je 700 MHz.
+            Používám nastavení na 900 MHz a&nbsp;rozdíl ve výkonu není nijak extrémní.
+        </li>
+        <li>
+            Advanced Options – Několik dalších nastavení. Nastavení černých okrajů na obrazovce.
+            Jméno v&nbsp;síti. Množství paměti, které bude mít grafika k&nbsp;dispozici. Povolení SSH. Aktualizace konfiguračního programu.
+        </li>
+    </ul>
+    <p>
+        <a href="/img/2013/09/raspberry-pi-raspbian-instalace/raspi-config-1.jpg">
+            <img alt="Raspberry Pi config" src="/img/2013/09/raspberry-pi-raspbian-instalace/raspi-config-1-580.jpg" class="img-responsive" width="580" height="361">
+        </a>
+    </p>
+</article>
+<nav class="nav-next-prev">
+    <a href="/2013/08/raspberry-pi-objednavka/">« Raspberry Pi – objednávka</a>
+    <a href="/2013/09/stozec/">Stožec »</a>
+</nav>
+{% endblock content %}

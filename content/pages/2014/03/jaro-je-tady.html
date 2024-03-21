@@ -1,0 +1,25 @@
+{% extends "templates/layout.html" %}
+{% block title %}Jaro je tady{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Jaro je tady{% endblock description %}
+{% block content %}
+<article>
+    <h2>Jaro je tady</h2>
+    <p class="article-meta">
+        <time datetime="2014-03-02">02. 03. 2014</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/zahrada/">Zahrada</a>
+        </span>
+    </p>
+    <p>
+        <a href="/img/2014/03/jaro-je-tady/bledule.jpg">
+            <img alt="Bledule." src="/img/2014/03/jaro-je-tady/bledule-580.jpg" class="img-responsive" width="580" height="368">
+        </a>
+    </p>
+</article>
+<nav class="nav-next-prev">
+    <a href="/2014/02/raspberry-pi-navody/">« Raspberry Pi návody</a>
+    <a href="/2014/03/kvetouci-rozmaryn/">Kvetoucí rozmarýn »</a>
+</nav>
+{% endblock content %}

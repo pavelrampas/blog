@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Pavel Rampas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace">
+    <title>Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace - Pájův blog</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Pájův blog » RSS zdroj" href="">
+    <link rel="stylesheet" href="/style.css?v=1">
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="/">Pájův blog</a></h1>
+        </header>
+        <main>
+            
+<article>
+    <h2>Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace</h2>
+    <p class="article-meta">
+        <time datetime="2013-09-12">12. 09. 2013</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/raspberry-pi/">Raspberry Pi</a>
+        </span>
+    </p>
+    <p>
+        Aktuální návod najdete na&nbsp;<a href="http://raspberry.pavelrampas.cz/wi-fi">http://raspberry.pavelrampas.cz/wi-fi</a>
+    </p>
+    <p>
+        Pro tuto wi-fi kartu je na Raspbian potřeba doinstalovat ovladač. Ten je možné případně stáhnout
+        na jiném počítači a&nbsp;přenést si ho pomocí flash disku. Postupoval jsem podle návodu
+        na <a href="http://tech.enekochan.com/2013/05/29/tp-link-tl-wn725n-version-2-in-raspberry-pi/">tech.enekochan.com</a>,
+        kde jsou případně další varianty.
+    </p>
+    <p>
+        $ wget https://dl.dropboxusercontent.com/u/80256631/8188eu-20130209.tar.gz<br>
+        $ tar -zxvf 8188eu-20130209.tar.gz<br>
+        $ sudo install -p -m 644 8188eu.ko /lib/modules/`uname -r`/kernel/drivers/net/wireless<br>
+        $ sudo depmod -a<br>
+        $ sudo modprobe 8188eu
+    </p>
+    <p>
+        <strong>Aktualizace 26.12.2013</strong><br>
+        Ukázalo se že jakmile se změní jádro je třeba změnit i&nbsp;ovladač. Takže nejrůznější návody přestávají po krátké době fungovat.
+        Nejideálnější je použít tento postup na foru
+        <a href="http://www.raspberrypi.org/phpBB3/viewtopic.php?p=462982">http://www.raspberrypi.org/phpBB3/viewtopic.php?p=462982</a>.
+        Stačí vybrat odpovídající soubor podle verze jádra a&nbsp;postupovat podle návodu.
+        Verze se dá zjistit příkazem <strong>uname -r</strong>. V&nbsp;příkazech je třeba změnit název souboru.
+    </p>
+    <p>
+        $ wget https://dl.dropboxusercontent.com/u/80256631/8188eu-2013<strong>xxyy</strong>.tar.gz<br>
+        $ tar -zxvf 8188eu-2013<strong>xxyy</strong>.tar.gz<br>
+        $ sudo cp rtl8188eufw.bin /lib/firmware/rtlwifi<br>
+        $ sudo install -p -m 644 8188eu.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless<br>
+        $ sudo insmod /lib/modules/$(uname -r)/kernel/drivers/net/wireless/8188eu.ko<br>
+        $ sudo depmod -a
+    </p>
+</article>
+<nav class="nav-next-prev">
+    <a href="/2013/09/raspberry-pi-pasivni-chlazeni/">« Raspberry Pi – pasivní chlazení</a>
+    <a href="/2013/09/bylinky-na-podzim/">Bylinky na podzim »</a>
+</nav>
+
+        </main>
+        <footer>
+            <nav class="nav-years">
+                Rok:
+                <a href="/2013/">2013</a>,
+                <a href="/2014/">2014</a>,
+                <a href="/2015/">2015</a>,
+                <a href="/2016/">2016</a>,
+                <a href="/2019/">2019</a>,
+                <a href="/2020/">2020</a>,
+                <a href="/2021/">2021</a>,
+                <a href="/2022/">2022</a>,
+                <a href="/2023/">2023</a>,
+                <a href="/2024/">2024</a>
+            </nav>
+            <p><a rel="author" href="https://pavelrampas.cz/">Pavel Rampas</a>, info&#064;pavelrampas.cz</p>
+        </footer>
+    </div>
+</body>
+</html>

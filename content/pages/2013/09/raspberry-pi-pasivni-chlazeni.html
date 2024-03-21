@@ -1,0 +1,46 @@
+{% extends "templates/layout.html" %}
+{% block title %}Raspberry Pi – pasivní chlazení{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Raspberry Pi – pasivní chlazení{% endblock description %}
+{% block content %}
+<article>
+    <h2>Raspberry Pi – pasivní chlazení</h2>
+    <p class="article-meta">
+        <time datetime="2013-09-11">11. 09. 2013</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/raspberry-pi/">Raspberry Pi</a>
+        </span>
+    </p>
+    <p>
+        Nový článek o&nbsp;chlazení Raspberry Pi najdete na&nbsp;<a href="http://raspberry.pavelrampas.cz/chlazeni">http://raspberry.pavelrampas.cz/chlazeni</a>
+    </p>
+    <p>
+        Konečně jsem vyzkoušel pasivní chladič <a href="http://www.czc.cz/primecooler-pc-rhs2/32331/produkt">Primecooler PC-RHS2</a>
+        na svém Raspberry. Před nasazením jsem provedl teplotní testy. Stejné testy jsem pak provedl i&nbsp;po nasazení a&nbsp;z výsledků je jasné,
+        že chladiče nemají skoro žádný efekt. Teplota sice stoupá pomaleji a&nbsp;rychleji klesá, ale konečné hodnoty jsou skoro stejné.
+        Vliv by mohla mít také krabička, ale to se uvidí až budu mít nějakou pořádnou místo té co jsem si vyrobil z&nbsp;chevy.
+    </p>
+    <p>
+        Teploty bez chladiče:<br>
+        v&nbsp;nečinnosti – 45 °C<br>
+        přehrávání filmu 1080p – 50 °C<br>
+        hraní <a href="http://store.raspberrypi.com/projects/littlecrane">The Little Crane That Could</a> – 57 °C
+    </p>
+    <p>
+        Teploty s&nbsp;chladičem:<br>
+        v&nbsp;nečinnosti – 42 °C<br>
+        přehrávání filmu 1080p – 48 °C<br>
+        hraní <a href="http://store.raspberrypi.com/projects/littlecrane">The Little Crane That Could</a> – 55 °C
+    </p>
+    <p>
+        <a href="/img/2013/09/raspberry-pi-pasivni-chlazeni/raspberry-pi-pasivni-chlazeni.jpg">
+            <img alt="Raspberry Pi s pasivním chlazením." src="/img/2013/09/raspberry-pi-pasivni-chlazeni/raspberry-pi-pasivni-chlazeni-580.jpg" class="img-responsive" width="580" height="366">
+        </a>
+    </p>
+</article>
+<nav class="nav-next-prev">
+    <a href="/2013/09/stozec/">« Stožec</a>
+    <a href="/2013/09/raspberry-pi-wi-fi-tp-link-tl-wn725n-instalace/">Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace »</a>
+</nav>
+{% endblock content %}

@@ -1,0 +1,223 @@
+{% extends "templates/layout.html" %}
+{% block title %}Strana 4{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Pájův blog - strana 4{% endblock description %}
+{% block content %}
+<article>
+    <h2><a href="/2013/10/raspberry-pi-raspbian-ssh-sftp-a-putty/">Raspberry Pi – Raspbian SSH, SFTP a&nbsp;PuTTY</a></h2>
+    <p class="article-meta">
+        <time datetime="2013-10-25">25. 10. 2013</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/raspberry-pi/">Raspberry Pi</a>
+        </span>
+    </p>
+    <p>
+        Nové články o&nbsp;Raspberry Pi najdete na&nbsp;<a href="http://raspberry.pavelrampas.cz/">http://raspberry.pavelrampas.cz/</a>
+    </p>
+    <p>
+        Jak provozovat SSH a&nbsp;SFTP mezi Raspberry Pi s&nbsp;nainstalovaným Raspbianem a&nbsp;notebookem s&nbsp;Windows 7.
+    </p>
+    <p>
+        1. Napřed je potřeba obě zařízení spojit síťovým kabelem.
+    </p>
+    <p>
+        2. V&nbsp;Raspberry příkazem <em>sudo raspi-config</em> otevřeme konfiguraci a&nbsp;v&nbsp;Advance Options povolíme SSH,
+        pak nastavíme statickou ip adresu. Příkazem<em> sudo nano /etc/network/interfaces</em><br>
+        otevřeme soubor se síťovým nastavením.
+    </p>
+    <p>
+        Tuto řádku v&nbsp;souboru:<br>
+        <em>iface eth0 inet dhcp</em>
+    </p>
+    <p>
+        Nahradíme za tyto tři řádky:<br>
+        <em>iface eth0 inet static</em><br>
+        <em>address 192.168.1.1</em><br>
+        <em>netmask 255.255.255.0</em>
+    </p>
+    <p>
+        Nakonec Raspberry restartujeme.
+    </p>
+    <p>
+        3. Nastavení statické adresy ve Windows. Proklikáme se do nastavení sítě. Otevřeme
+        <em>Start/Ovládací panely/Centrum síťových připojení</em> a&nbsp;sdílení, zde vybereme požadovanou síť.
+        Klikneme na Vlastnosti, vybereme TCP/IPv4 a&nbsp;znovu klikneme na Vlastnosti.
+        Tady zadáme ip adresu 192.168.1.2 a&nbsp;masku 255.255.255.0.
+    </p>
+    <p>
+        4. Když máme nastaveny ip adresy. Můžeme použít program
+        <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY</a> pro SSH komunikaci.
+        Program stačí stáhnout a&nbsp;spustit, nemusí se instalovat. Po spuštění jenom zadáme ip adresu
+        Raspberry a&nbsp;dáme připojit. Vyskočí nám okno ve kterém už se můžeme přihlásit na Raspberry pomocí
+        přihlašovacího jména <em>pi</em> a&nbsp;hesla<em> raspberry</em>.
+    </p>
+    <p>
+        5. Pro přenos souborů pak můžeme použít SFTP. K&nbsp;tomu potřebujeme například program
+        <a href="https://filezilla-project.org/">FileZilla</a> ve kterém stačí vybrat nové SFTP připojení
+        zadat ip adresu Raspberry přihlašovací jméno a&nbsp;heslo. Pak už stačí dát připojit.
+    </p>
+    <p>
+        K&nbsp;jednotlivým krokům jsem použil následující zdroje:<br>
+        <a href="http://www.instantsupportsite.com/self-help/raspberry-pi/raspberry-configure-static-ip-eth0/">http://www.instantsupportsite.com/self-help/raspberry-pi/raspberry-configure-static-ip-eth0/</a><br>
+        <a href="http://windows.microsoft.com/is-is/windows7/change-tcp-ip-settings">http://windows.microsoft.com/is-is/windows7/change-tcp-ip-settings</a><br>
+        <a href="http://raspberrypi4dummies.wordpress.com/2013/03/17/connect-to-the-raspberry-pi-via-ssh-putty/">http://raspberrypi4dummies.wordpress.com/2013/03/17/connect-to-the-raspberry-pi-via-ssh-putty/</a><br>
+        <a href="http://www.barnesian.com/2012/09/how-to-transfer-files-to-raspberry-pi.html">http://www.barnesian.com/2012/09/how-to-transfer-files-to-raspberry-pi.html</a>
+    </p>
+</article>
+<div class="article-separator"></div>
+<article>
+    <h2><a href="/2013/10/v-podzimni-prirode/">V podzimní přírodě</a></h2>
+    <p class="article-meta">
+        <time datetime="2013-10-22">22. 10. 2013</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/akce/">Akce</a>
+        </span>
+    </p>
+    <p>
+        Chtěl jsem ještě využít poslední teplé dny a&nbsp;vyrazil jsem po dlouhé době na oblíbenou trasu podél Vltavy.
+        Akorát to sluníčko se většinu dne schovávalo za mraky. Na plán trasy kterou jsem zdolal se můžete
+        podívat na <a href="http://goo.gl/DIQiPv">mapě</a>.
+    </p>
+    <p>
+        <a href="/img/2013/10/v-podzimni-prirode/takovy-zajimavy-pokus.jpg">
+            <img alt="Takový zajímavý pokus." src="/img/2013/10/v-podzimni-prirode/takovy-zajimavy-pokus-580.jpg" class="img-responsive" width="580" height="340">
+        </a>
+    </p>
+    <p>
+        <a href="/img/2013/10/v-podzimni-prirode/purkarec.jpg">
+            <img alt="Purkarec." src="/img/2013/10/v-podzimni-prirode/purkarec-580.jpg" class="img-responsive" width="580" height="338">
+        </a>
+    </p>
+    <p>
+        <a href="/img/2013/10/v-podzimni-prirode/tabor.jpg">
+            <img alt="Tábor." src="/img/2013/10/v-podzimni-prirode/tabor-580.jpg" class="img-responsive" width="580" height="358">
+        </a>
+    </p>
+    <p>
+        <a href="/img/2013/10/v-podzimni-prirode/vltava.jpg">
+            <img alt="Stromy podél řeky." src="/img/2013/10/v-podzimni-prirode/vltava-580.jpg" class="img-responsive" width="580" height="351">
+        </a>
+    </p>
+    <p>
+        <a href="/img/2013/10/v-podzimni-prirode/vltava-pod-babou.jpg">
+            <img alt="Výhled z Baby." src="/img/2013/10/v-podzimni-prirode/vltava-pod-babou-580.jpg" class="img-responsive" width="580" height="831">
+        </a>
+    </p>
+    <p>
+        <a href="/img/2013/10/v-podzimni-prirode/listi.jpg">
+            <img alt="Barevné listí." src="/img/2013/10/v-podzimni-prirode/listi-580.jpg" class="img-responsive" width="580" height="387">
+        </a>
+    </p>
+    <p>
+        <a href="/img/2013/10/v-podzimni-prirode/hluboka-nad-vltavou.jpg">
+            <img alt="Hluboká nad Vltavou." src="/img/2013/10/v-podzimni-prirode/hluboka-nad-vltavou-580.jpg" class="img-responsive" width="580" height="348">
+        </a>
+    </p>
+</article>
+<div class="article-separator"></div>
+<article>
+    <h2><a href="/2013/09/bylinky-na-podzim/">Bylinky na podzim</a></h2>
+    <p class="article-meta">
+        <time datetime="2013-09-22">22. 09. 2013</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/zahrada/">Zahrada</a>
+        </span>
+    </p>
+    <p>
+        Máme tu podzim. Zbytky petržele a&nbsp;pažitky už sežrali slimáci a&nbsp;tak zůstal jenom rozmarýn,
+        který se pomalu chystá k&nbsp;zimnímu spánku v&nbsp;garáži. Je vidět jak za ten půlrok pěkně vyrostl.
+    </p>
+    <p>
+        <a href="/img/2013/09/bylinky-na-podzim/rozmaryn.jpg">
+            <img alt="Rozmarýn." src="/img/2013/09/bylinky-na-podzim/rozmaryn-580.jpg" class="img-responsive" width="580" height="359">
+        </a>
+    </p>
+</article>
+<div class="article-separator"></div>
+<article>
+    <h2><a href="/2013/09/raspberry-pi-wi-fi-tp-link-tl-wn725n-instalace/">Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace</a></h2>
+    <p class="article-meta">
+        <time datetime="2013-09-12">12. 09. 2013</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/raspberry-pi/">Raspberry Pi</a>
+        </span>
+    </p>
+    <p>
+        Aktuální návod najdete na&nbsp;<a href="http://raspberry.pavelrampas.cz/wi-fi">http://raspberry.pavelrampas.cz/wi-fi</a>
+    </p>
+    <p>
+        Pro tuto wi-fi kartu je na Raspbian potřeba doinstalovat ovladač. Ten je možné případně stáhnout
+        na jiném počítači a&nbsp;přenést si ho pomocí flash disku. Postupoval jsem podle návodu
+        na <a href="http://tech.enekochan.com/2013/05/29/tp-link-tl-wn725n-version-2-in-raspberry-pi/">tech.enekochan.com</a>,
+        kde jsou případně další varianty.
+    </p>
+    <p>
+        $ wget https://dl.dropboxusercontent.com/u/80256631/8188eu-20130209.tar.gz<br>
+        $ tar -zxvf 8188eu-20130209.tar.gz<br>
+        $ sudo install -p -m 644 8188eu.ko /lib/modules/`uname -r`/kernel/drivers/net/wireless<br>
+        $ sudo depmod -a<br>
+        $ sudo modprobe 8188eu
+    </p>
+    <p>
+        <strong>Aktualizace 26.12.2013</strong><br>
+        Ukázalo se že jakmile se změní jádro je třeba změnit i&nbsp;ovladač. Takže nejrůznější návody přestávají po krátké době fungovat.
+        Nejideálnější je použít tento postup na foru
+        <a href="http://www.raspberrypi.org/phpBB3/viewtopic.php?p=462982">http://www.raspberrypi.org/phpBB3/viewtopic.php?p=462982</a>.
+        Stačí vybrat odpovídající soubor podle verze jádra a&nbsp;postupovat podle návodu.
+        Verze se dá zjistit příkazem <strong>uname -r</strong>. V&nbsp;příkazech je třeba změnit název souboru.
+    </p>
+    <p>
+        $ wget https://dl.dropboxusercontent.com/u/80256631/8188eu-2013<strong>xxyy</strong>.tar.gz<br>
+        $ tar -zxvf 8188eu-2013<strong>xxyy</strong>.tar.gz<br>
+        $ sudo cp rtl8188eufw.bin /lib/firmware/rtlwifi<br>
+        $ sudo install -p -m 644 8188eu.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless<br>
+        $ sudo insmod /lib/modules/$(uname -r)/kernel/drivers/net/wireless/8188eu.ko<br>
+        $ sudo depmod -a
+    </p>
+</article>
+<div class="article-separator"></div>
+<article>
+    <h2><a href="/2013/09/raspberry-pi-pasivni-chlazeni/">Raspberry Pi – pasivní chlazení</a></h2>
+    <p class="article-meta">
+        <time datetime="2013-09-11">11. 09. 2013</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/raspberry-pi/">Raspberry Pi</a>
+        </span>
+    </p>
+    <p>
+        Nový článek o&nbsp;chlazení Raspberry Pi najdete na&nbsp;<a href="http://raspberry.pavelrampas.cz/chlazeni">http://raspberry.pavelrampas.cz/chlazeni</a>
+    </p>
+    <p>
+        Konečně jsem vyzkoušel pasivní chladič <a href="http://www.czc.cz/primecooler-pc-rhs2/32331/produkt">Primecooler PC-RHS2</a>
+        na svém Raspberry. Před nasazením jsem provedl teplotní testy. Stejné testy jsem pak provedl i&nbsp;po nasazení a&nbsp;z výsledků je jasné,
+        že chladiče nemají skoro žádný efekt. Teplota sice stoupá pomaleji a&nbsp;rychleji klesá, ale konečné hodnoty jsou skoro stejné.
+        Vliv by mohla mít také krabička, ale to se uvidí až budu mít nějakou pořádnou místo té co jsem si vyrobil z&nbsp;chevy.
+    </p>
+    <p>
+        Teploty bez chladiče:<br>
+        v&nbsp;nečinnosti – 45 °C<br>
+        přehrávání filmu 1080p – 50 °C<br>
+        hraní <a href="http://store.raspberrypi.com/projects/littlecrane">The Little Crane That Could</a> – 57 °C
+    </p>
+    <p>
+        Teploty s&nbsp;chladičem:<br>
+        v&nbsp;nečinnosti – 42 °C<br>
+        přehrávání filmu 1080p – 48 °C<br>
+        hraní <a href="http://store.raspberrypi.com/projects/littlecrane">The Little Crane That Could</a> – 55 °C
+    </p>
+    <p>
+        <a href="/img/2013/09/raspberry-pi-pasivni-chlazeni/raspberry-pi-pasivni-chlazeni.jpg">
+            <img alt="Raspberry Pi s pasivním chlazením." src="/img/2013/09/raspberry-pi-pasivni-chlazeni/raspberry-pi-pasivni-chlazeni-580.jpg" class="img-responsive" width="580" height="366">
+        </a>
+    </p>
+</article>
+<nav class="nav-next-prev">
+    <a href="/strana/5/">« novější příspěvky</a>
+    <a href="/strana/3/">starší příspěvky »</a>
+</nav>
+{% endblock content %}
