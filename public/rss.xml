@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" version="2.0">
+	<channel>
+		<title>Pájův blog/title>
+		<atom:link href="https://blog.pavelrampas.cz/rss.xml" rel="self" type="application/rss+xml"/>
+		<link>https://blog.pavelrampas.cz</link>
+		<description>Pájovo osobní blog o všem možném. Prostě co mě zrovna napadne.</description>
+		<lastBuildDate>Fri, 22 Mar 2024 20:15:58 +0100</lastBuildDate>
+		<language>cs-CZ</language>
+        <item>
+		    <title>Sčítání na krmítku 2024</title>
+            <link>https://blog.pavelrampas.cz/2024/01/scitani-na-krmitku-2024/</link>
+            <pubDate>Sun, 14 Jan 2024 21:34:58 +0000</pubDate>
+            <description><![CDATA[kos černý: 5 sýkora koňadra: 4 sýkora modřinka: 2 pěnkava obecná: 2 strakapoud velký: 1 bažant obecný: 1 červenka obecná: 1 vrabec polní: 1 straka obecná: 1 dlask tlustozobý: 1 zvonek zelený: 12]]></description>
+        </item>
+		<item>
+            <title>Kalendář 2024</title>
+            <link>https://blog.pavelrampas.cz/2023/11/kalendar-2024/</link>
+            <pubDate>Sat, 18 Nov 2023 14:51:03 +0000</pubDate>
+		    <description><![CDATA[Jako vždy jsem připravil kalendáře na příští rok. PDF i zdrojové ODS soubory jsou ke stažení na adrese https://uloz.to/shared/folder/WNtscGBJ7ucQ Nebo můžete jednotlivé kalendáře stahovat přímo tady na mém webu pomocí následujících odkazů. Kalendář 2024 verze 1 Kalendář 2024 verze 2 Kalendář 2024 verze 3 Kalendář 2024 verze 4 Kalendář 2024 verze 5 Kalendář 2024 verze [&#8230;]]]></description>
+        </item>
+		<item>
+            <title>Sčítání na krmítku 2023</title>
+            <link>https://blog.pavelrampas.cz/2023/01/scitani-na-krmitku-2023/</link>
+            <pubDate>Sun, 08 Jan 2023 15:13:22 +0000</pubDate>
+			<description><![CDATA[Letošní sčítání na krmítku bylo trochu slabší. Je takový teplo, že ty ptáci nemají o krmítko zájem a moc na něj nelétají. vrabec polní: 13 pěnkava obecná: 1 sýkora koňadra: 4 sýkora modřinka: 6 brhlík lesní: 1 červenka obecná: 1 šoupálek: 1]]></description>
+        </item>
+		<item>
+		    <title>Kalendář 2023</title>
+            <link>https://blog.pavelrampas.cz/2022/11/kalendar-2023/</link>
+            <pubDate>Sat, 05 Nov 2022 19:36:32 +0000</pubDate>
+            <description><![CDATA[Jako vždy jsem připravil kalendáře na příští rok. PDF i zdrojové ODS soubory jsou ke stažení na adrese https://uloz.to/folder/Tis7x8XgToPT Nebo můžete jednotlivé kalendáře stahovat přímo tady na mém webu pomocí následujících odkazů. Kalendář 2023 verze 1 Kalendář 2023 verze 2 Kalendář 2023 verze 3 Kalendář 2023 verze 4 Kalendář 2023 verze 5 Kalendář 2023 verze [&#8230;]]]></description>
+        </item>
+		<item>
+            <title>Sčítání na krmítku 2022</title>
+            <link>https://blog.pavelrampas.cz/2022/01/scitani-na-krmitku-2022/</link>
+            <pubDate>Sun, 09 Jan 2022 15:06:25 +0000</pubDate>
+            <description><![CDATA[Jako každý rok jsem sčítal ptáky na krmítku a opět mám pěkný seznam. vrabec polní: 16 pěnkava obecná: 2 sýkora koňadra: 5 zvonek zelený: 5 sýkora modřinka: 2 bažant obecný: 1 strakapoud velký: 1 kos černý: 1 dlask tlustozobý: 1 brhlík lesní: 1]]></description>
+        </item>
+		<item>
+		    <title>Kalendář 2022</title>
+            <link>https://blog.pavelrampas.cz/2021/12/kalendar-2022/</link>
+            <pubDate>Sun, 05 Dec 2021 11:58:02 +0000</pubDate>
+            <description><![CDATA[Jako vždy jsem připravil kalendáře na příští rok. PDF i zdrojové ODS soubory jsou ke stažení na adrese https://uloz.to/folder/xpy1eL0h1aCZ Nebo můžete jednotlivé kalendáře stahovat přímo tady na mém webu pomocí následujících odkazů. Kalendář 2022 verze 1 Kalendář 2022 verze 2 Kalendář 2022 verze 3 Kalendář 2022 verze 4 Kalendář 2022 verze 5 Kalendář 2022 verze [&#8230;]]]></description>
+        </item>
+		<item>
+		    <title>Sčítání na krmítku 2021</title>
+            <link>https://blog.pavelrampas.cz/2021/01/scitani-na-krmitku-2021/</link>
+            <pubDate>Sun, 10 Jan 2021 19:52:43 +0000</pubDate>
+            <description><![CDATA[Stejně jako loni jsem se zapojil do sčítání ptáků na krmítku a i letos mám pěkný seznam. vrabec polní: 13 pěnkava obecná: 5 sýkora koňadra: 3 sýkora modřinka: 3 bažant obecný: 3 červenka obecná: 1 strakapoud velký: 1 poštolka obecná: 1]]></description>
+        </item>
+		<item>
+            <title>Kalendář 2021</title>
+            <link>https://blog.pavelrampas.cz/2020/12/kalendar-2021/</link>
+            <pubDate>Sun, 06 Dec 2020 18:33:46 +0000</pubDate>
+            <description><![CDATA[Stejně jako loni jsem připravil kalendáře na příští rok. PDF i zdrojové ODS jsou ke stažení na adrese  https://uloz.to/folder/Scdtk0NTOh5x Nebo můžete jednotlivé kalendáře stahovat přímo tady na mém webu pomocí následujících odkazů. Kalendář 2021 verze 1 Kalendář 2021 verze 2 Kalendář 2021 verze 3 Kalendář 2021 verze 4 Kalendář 2021 verze 5 Kalendář 2021 verze [&#8230;]]]></description>
+        </item>
+		<item>
+		    <title>Proč spíme</title>
+            <link>https://blog.pavelrampas.cz/2020/10/proc-spime/</link>
+            <pubDate>Sun, 04 Oct 2020 18:51:42 +0000</pubDate>
+            <description><![CDATA[Máte problémy s pamětí? Možná je to tím, že málo nebo špatně spíte. Chcete vědět co dalšího a jakým způsobem spánek ovlivňuje a co všechno má vliv na kvalitu spánku? V tom případě doporučuji knihu Proč spíme: Odhalte sílu spánku a snění. Jako rychlou ukázku toho o čem kniha je se můžete podívat na autorovu [&#8230;]]]></description>
+        </item>
+		<item>
+            <title>Sčítání na krmítku</title>
+            <link>https://blog.pavelrampas.cz/2020/01/scitani-na-krmitku/</link>
+            <pubDate>Sun, 12 Jan 2020 12:17:20 +0000</pubDate>
+            <description><![CDATA[Letos jsem se poprvé zapojil do sčítání ptáků na krmítku a účast ptactva byla hojná. vrabec polní: 13 kos černý: 3 hýl obecný: 6 sýkora koňadra: 6 sýkora modřinka: 1 červenka obecná: 1 zvonek zelený: 2 brhlík lesní: 1 krahujec obecný: 1]]></description>
+        </item>
+	</channel>
+</rss>
