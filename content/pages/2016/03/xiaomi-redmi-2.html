@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Xiaomi Redmi 2{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -91,8 +92,10 @@
         Aplikace Googlu – Nejrůznější Google aplikace jako YouTube, Gmail, Hangouts a&nbsp;další.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2015/04/dobudoval-jsem-strom-dovednosti/">«&nbsp;Dobudoval jsem strom dovedností</a>
-    <a href="/2019/12/kalendar-2020/">Kalendář 2020&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2015/04/dobudoval-jsem-strom-dovednosti/",
+    prev_text="«&nbsp;Dobudoval jsem strom dovedností",
+    next_url="/2019/12/kalendar-2020/",
+    next_text="Kalendář 2020&nbsp;»"
+) }}
 {% endblock content %}

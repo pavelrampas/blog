@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi návody{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -18,8 +19,10 @@
         která bude věnována pouze Raspberry Pi.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2014/01/michana-vajicka-s-cherry-rajcaty/">«&nbsp;Míchaná vajíčka s&nbsp;cherry rajčaty</a>
-    <a href="/2014/03/jaro-je-tady/">Jaro je tady&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2014/01/michana-vajicka-s-cherry-rajcaty/",
+    prev_text="«&nbsp;Míchaná vajíčka s&nbsp;cherry rajčaty",
+    next_url="/2014/03/jaro-je-tady/",
+    next_text="Jaro je tady&nbsp;»"
+) }}
 {% endblock content %}

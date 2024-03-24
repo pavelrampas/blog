@@ -1,7 +1,8 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Ahoj všichni!{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
-{% block description %}Ahoj všichni!{% endblock description %}
+{% block description %}Vítejte ve WordPressu. Toto je váš první testovací příspěvek. Můžete ho upravit, nebo smazat a postupně pak začít ... {% endblock description %}
 {% block content %}
 <article>
     <h2>Ahoj všichni!</h2>
@@ -21,8 +22,10 @@
         že v&nbsp;komentářích nefungují barevná jména z&nbsp;původního blogu, takže tam nezkoušej psát místo jména heslo.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <div></div>
-    <a href="/2013/02/tpb-afk-the-pirate-bay-away-from-keyboard/">TPB AFK: The Pirate Bay Away From Keyboard&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="",
+    prev_text="",
+    next_url="/2013/02/tpb-afk-the-pirate-bay-away-from-keyboard/",
+    next_text="TPB AFK: The Pirate Bay Away From Keyboard&nbsp;»"
+) }}
 {% endblock content %}

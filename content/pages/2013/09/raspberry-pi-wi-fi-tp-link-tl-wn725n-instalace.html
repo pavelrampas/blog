@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -45,8 +46,10 @@
         $ sudo depmod -a
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/09/raspberry-pi-pasivni-chlazeni/">«&nbsp;Raspberry Pi – pasivní chlazení</a>
-    <a href="/2013/09/bylinky-na-podzim/">Bylinky na podzim&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/09/raspberry-pi-pasivni-chlazeni/",
+    prev_text="«&nbsp;Raspberry Pi – pasivní chlazení",
+    next_url="/2013/09/bylinky-na-podzim/",
+    next_text="Bylinky na podzim&nbsp;»"
+) }}
 {% endblock content %}

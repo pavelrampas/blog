@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi – OMXPlayer a MPlayer{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -72,8 +73,10 @@
         <a href="http://www.abclinuxu.cz/poradna/linux/show/86195">http://www.abclinuxu.cz/poradna/linux/show/86195</a>
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/11/raspberry-pi-cerna-obrazovka/">«&nbsp;Raspberry Pi – Černá obrazovka</a>
-    <a href="/2013/12/caj/">Čaj&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/11/raspberry-pi-cerna-obrazovka/",
+    prev_text="«&nbsp;Raspberry Pi – Černá obrazovka",
+    next_url="/2013/12/caj/",
+    next_text="Čaj&nbsp;»"
+) }}
 {% endblock content %}

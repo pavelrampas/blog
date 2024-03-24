@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}MSI EX620X – výměna větráčku{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -58,8 +59,10 @@
         </a>
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/02/tpb-afk-the-pirate-bay-away-from-keyboard/">«&nbsp;TPB AFK: The Pirate Bay Away From Keyboard</a>
-    <a href="/2013/03/konec-google-reader/">Konec Google Reader&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/02/tpb-afk-the-pirate-bay-away-from-keyboard/",
+    prev_text="«&nbsp;TPB AFK: The Pirate Bay Away From Keyboard",
+    next_url="/2013/03/konec-google-reader/",
+    next_text="Konec Google Reader&nbsp;»"
+) }}
 {% endblock content %}

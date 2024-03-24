@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi – pasivní chlazení{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -39,8 +40,10 @@
         </a>
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/09/stozec/">«&nbsp;Stožec</a>
-    <a href="/2013/09/raspberry-pi-wi-fi-tp-link-tl-wn725n-instalace/">Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/09/stozec/",
+    prev_text="«&nbsp;Stožec",
+    next_url="/2013/09/raspberry-pi-wi-fi-tp-link-tl-wn725n-instalace/",
+    next_text="Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace&nbsp;»"
+) }}
 {% endblock content %}

@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Strana 7{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -152,8 +153,10 @@
         </a>
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/strana/8/">«&nbsp;novější příspěvky</a>
-    <a href="/strana/6/">starší příspěvky&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/strana/8/",
+    prev_text="«&nbsp;novější příspěvky",
+    next_url="/strana/6/",
+    next_text="starší příspěvky&nbsp;»"
+) }}
 {% endblock content %}

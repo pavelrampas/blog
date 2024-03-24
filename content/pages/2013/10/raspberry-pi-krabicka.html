@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi – Krabička{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -25,8 +26,10 @@
         </a>
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/10/raspberry-pi-raspbian-ssh-sftp-a-putty/">«&nbsp;Raspberry Pi – Raspbian SSH, SFTP a&nbsp;PuTTY</a>
-    <a href="/2013/11/cesta-podel-malse/">Cesta podél Malše&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/10/raspberry-pi-raspbian-ssh-sftp-a-putty/",
+    prev_text="«&nbsp;Raspberry Pi – Raspbian SSH, SFTP a&nbsp;PuTTY",
+    next_url="/2013/11/cesta-podel-malse/",
+    next_text="Cesta podél Malše&nbsp;»"
+) }}
 {% endblock content %}

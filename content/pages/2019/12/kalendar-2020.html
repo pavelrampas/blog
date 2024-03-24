@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Kalendář 2020{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -36,8 +37,10 @@
         Pokud by jste někdo našel nějakou chybu. Můžete mi to oznámit v&nbsp;komentářích.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2016/03/xiaomi-redmi-2/">«&nbsp;Xiaomi Redmi 2</a>
-    <a href="/2020/01/scitani-na-krmitku/">Sčítání na krmítku&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2016/03/xiaomi-redmi-2/",
+    prev_text="«&nbsp;Xiaomi Redmi 2",
+    next_url="/2020/01/scitani-na-krmitku/",
+    next_text="Sčítání na krmítku&nbsp;»"
+) }}
 {% endblock content %}

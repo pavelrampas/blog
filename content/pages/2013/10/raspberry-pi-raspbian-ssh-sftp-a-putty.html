@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi – Raspbian SSH, SFTP a PuTTY{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -65,8 +66,10 @@
         <a href="http://www.barnesian.com/2012/09/how-to-transfer-files-to-raspberry-pi.html">http://www.barnesian.com/2012/09/how-to-transfer-files-to-raspberry-pi.html</a>
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/10/v-podzimni-prirode/">«&nbsp;V&nbsp;podzimní přírodě</a>
-    <a href="/2013/10/raspberry-pi-krabicka/">Raspberry Pi – Krabička&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/10/v-podzimni-prirode/",
+    prev_text="«&nbsp;V&nbsp;podzimní přírodě",
+    next_url="/2013/10/raspberry-pi-krabicka/",
+    next_text="Raspberry Pi – Krabička&nbsp;»"
+) }}
 {% endblock content %}

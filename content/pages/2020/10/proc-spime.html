@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Proč spíme{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -23,8 +24,10 @@
             které jsou uvedené na konci knihy.
         </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2020/01/scitani-na-krmitku/">«&nbsp;Sčítání na krmítku</a>
-    <a href="/2020/12/kalendar-2021/">Kalendář 2021&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2020/01/scitani-na-krmitku/",
+    prev_text="«&nbsp;Sčítání na krmítku",
+    next_url="/2020/12/kalendar-2021/",
+    next_text="Kalendář 2021&nbsp;»"
+) }}
 {% endblock content %}

@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi – Napájení a repráčky{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -23,8 +24,10 @@
         které mají na svou cenu slušný zvuk a&nbsp;hlavně jsou napájené z&nbsp;usb, takže na ně nepotřebuji zásuvku.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/11/cesta-podel-malse/">«&nbsp;Cesta podél Malše</a>
-    <a href="/2013/11/raspberry-pi-cerna-obrazovka/">Raspberry Pi – Černá obrazovka&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/11/cesta-podel-malse/",
+    prev_text="«&nbsp;Cesta podél Malše",
+    next_url="/2013/11/raspberry-pi-cerna-obrazovka/",
+    next_text="Raspberry Pi – Černá obrazovka&nbsp;»"
+) }}
 {% endblock content %}

@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Strana 1{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -157,8 +158,10 @@
         že v&nbsp;komentářích nefungují barevná jména z&nbsp;původního blogu, takže tam nezkoušej psát místo jména heslo.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/strana/2/">«&nbsp;novější příspěvky</a>
-    <div></div>
-</nav>
+{{ macros::navigation(
+    prev_url="/strana/2/",
+    prev_text="«&nbsp;novější příspěvky",
+    next_url="",
+    next_text=""
+) }}
 {% endblock content %}

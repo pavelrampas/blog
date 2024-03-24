@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Konec Google Reader{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -25,8 +26,10 @@
         když člověk nikdy neví kdy se rozhodnou něco ukončit.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/02/msi-ex620x-vymena-vetracku/">«&nbsp;MSI EX620X – výměna větráčku</a>
-    <a href="/2013/04/opozdene-velikonocni-pernicky/">Opožděné velikonoční perníčky&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/02/msi-ex620x-vymena-vetracku/",
+    prev_text="«&nbsp;MSI EX620X – výměna větráčku",
+    next_url="/2013/04/opozdene-velikonocni-pernicky/",
+    next_text="Opožděné velikonoční perníčky&nbsp;»"
+) }}
 {% endblock content %}

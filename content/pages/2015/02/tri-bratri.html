@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Tři bratři{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -21,8 +22,10 @@
         tak je můžete porovnat s&nbsp;<a href="https://www.youtube.com/watch?v=-TFm-Et3d4I">původními verzemi</a> pohádek.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2015/02/windows-8-1/">«&nbsp;Windows 8.1</a>
-    <a href="/2015/04/dobudoval-jsem-strom-dovednosti/">Dobudoval jsem strom dovedností&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2015/02/windows-8-1/",
+    prev_text="«&nbsp;Windows 8.1",
+    next_url="/2015/04/dobudoval-jsem-strom-dovednosti/",
+    next_text="Dobudoval jsem strom dovedností&nbsp;»"
+) }}
 {% endblock content %}

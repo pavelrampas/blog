@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Strana 8{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -195,8 +196,10 @@
         tak je můžete porovnat s&nbsp;<a href="https://www.youtube.com/watch?v=-TFm-Et3d4I">původními verzemi</a> pohádek.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/strana/9/">«&nbsp;novější příspěvky</a>
-    <a href="/strana/7/">starší příspěvky&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/strana/9/",
+    prev_text="«&nbsp;novější příspěvky",
+    next_url="/strana/7/",
+    next_text="starší příspěvky&nbsp;»"
+) }}
 {% endblock content %}

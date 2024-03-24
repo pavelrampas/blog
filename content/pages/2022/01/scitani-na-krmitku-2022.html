@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Sčítání na krmítku 2022{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -29,8 +30,10 @@
         brhlík lesní: 1
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2021/12/kalendar-2022/">«&nbsp;Kalendář 2022</a>
-    <a href="/2022/11/kalendar-2023/">Kalendář 2023&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2021/12/kalendar-2022/",
+    prev_text="«&nbsp;Kalendář 2022",
+    next_url="/2022/11/kalendar-2023/",
+    next_text="Kalendář 2023&nbsp;»"
+) }}
 {% endblock content %}

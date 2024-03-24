@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi – Černá obrazovka{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -23,8 +24,10 @@
         <em>/boot/config.txt</em> a&nbsp;odkomentovat řádek <em>hdmi_force_hotplug</em>.
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2013/11/raspberry-pi-napajeni-a-repracky/">«&nbsp;Raspberry Pi – Napájení a&nbsp;repráčky</a>
-    <a href="/2013/11/raspberry-pi-omxplayer-a-mplayer/">Raspberry Pi – OMXPlayer a&nbsp;MPlayer&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2013/11/raspberry-pi-napajeni-a-repracky/",
+    prev_text="«&nbsp;Raspberry Pi – Napájení a&nbsp;repráčky",
+    next_url="/2013/11/raspberry-pi-omxplayer-a-mplayer/",
+    next_text="Raspberry Pi – OMXPlayer a&nbsp;MPlayer&nbsp;»"
+) }}
 {% endblock content %}

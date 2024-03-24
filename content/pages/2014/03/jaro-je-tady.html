@@ -1,3 +1,4 @@
+{% import "macros/macros.html" as macros %}
 {% extends "templates/layout.html" %}
 {% block title %}Jaro je tady{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
@@ -18,8 +19,10 @@
         </a>
     </p>
 </article>
-<nav class="nav-next-prev">
-    <a href="/2014/02/raspberry-pi-navody/">«&nbsp;Raspberry Pi návody</a>
-    <a href="/2014/03/kvetouci-rozmaryn/">Kvetoucí rozmarýn&nbsp;»</a>
-</nav>
+{{ macros::navigation(
+    prev_url="/2014/02/raspberry-pi-navody/",
+    prev_text="«&nbsp;Raspberry Pi návody",
+    next_url="/2014/03/kvetouci-rozmaryn/",
+    next_text="Kvetoucí rozmarýn&nbsp;»"
+) }}
 {% endblock content %}
