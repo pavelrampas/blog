@@ -61,6 +61,10 @@ article {
     height: auto;
     margin: 0 auto;
 }
+.img-description {
+    font-style: italic;
+    font-size: 0.9rem;
+}
 .nav-next-prev {
     display: flex;
     justify-content: space-between;
@@ -98,11 +102,4 @@ footer {
 }
 .nav-years {
     margin-top: 0.5rem;
-}
-
-.center {
-    text-align: center;
-}
-.w-50 {
-    width: 50%;
 }
