@@ -70,3 +70,18 @@ RewriteRule ^439-scitani-na-krmitku-2024/$ /2024/01/scitani-na-krmitku-2024/ [L,
     ExpiresByType application/ico "access plus 6 month"
     ExpiresDefault "access plus 1 days"
 </IfModule>
+
+# gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript text/javascript application/javascript application/json
+</IfModule>
+
+# Security
+<IfModule mod_headers.c>
+	Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+    Header set Content-Security-Policy "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'self'; font-src 'self' data:;"
+    Header set X-Content-Type-Options nosniff
+    Header set X-Frame-Options DENY
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "no-referrer"
+</IfModule>
