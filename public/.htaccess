@@ -50,3 +50,23 @@ RewriteRule ^419-kalendar-2023/$ /2022/11/kalendar-2023/ [L,R=301]
 RewriteRule ^422-scitani-na-krmitku-2023/$ /2023/01/scitani-na-krmitku-2023/ [L,R=301]
 RewriteRule ^427-kalendar-2024/$ /2023/11/kalendar-2024/ [L,R=301]
 RewriteRule ^439-scitani-na-krmitku-2024/$ /2024/01/scitani-na-krmitku-2024/ [L,R=301]
+
+# expires caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 6 month"
+    ExpiresByType image/jpeg "access plus 6 month"
+    ExpiresByType image/gif "access plus 6 month"
+    ExpiresByType image/png "access plus 6 month"
+    ExpiresByType text/css "access plus 6 month"
+    ExpiresByType application/pdf "access plus 6 month"
+    ExpiresByType text/x-javascript "access plus 6 month"
+    ExpiresByType application/x-javascript "access plus 6 month"
+    ExpiresByType application/javascript "access plus 6 month"
+    ExpiresByType application/x-shockwave-flash "access plus 6 month"
+    ExpiresByType image/x-icon "access plus 6 month"
+    ExpiresByType image/icon "access plus 3 month"
+    ExpiresByType application/x-ico "access plus 6 month"
+    ExpiresByType application/ico "access plus 6 month"
+    ExpiresDefault "access plus 1 days"
+</IfModule>
