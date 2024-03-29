@@ -1,6 +1,6 @@
 {% macro navigation(prev_url, prev_text, next_url, next_text) %}
 <nav class="nav-next-prev">
-    {% if prev_url %}<a href="{{ prev_url | safe }}">{{ prev_text | safe }}</a>{% else %}<div></div>{% endif %}
-    {% if next_url %}<a href="{{ next_url | safe }}">{{ next_text | safe }}</a>{% else %}<div></div>{% endif %}
+    {% if prev_url %}<div><a href="{{ prev_url | safe }}">{{ prev_text | safe }}</a></div>{% else %}<div></div>{% endif %}
+    {% if next_url %}<div><a href="{{ next_url | safe }}">{{ next_text | safe }}</a></div>{% else %}<div></div>{% endif %}
 </nav>
 {% endmacro navigation %}

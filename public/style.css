@@ -100,20 +100,20 @@ pre code {
     border-top: 1px solid #dddddd;
     padding-top: 4rem;
 }
-.nav-next-prev a {
+.nav-next-prev div {
     width: 46%;
 }
-.nav-next-prev a {
+.nav-next-prev div {
     text-align: right;
 }
-.nav-next-prev a:first-child {
+.nav-next-prev div:first-child {
     text-align: left;
 }
 @media (max-width:745px) {
     .nav-next-prev {
         flex-direction: column;
     }
-    .nav-next-prev a {
+    .nav-next-prev div {
         width: 100%;
     }
 }
