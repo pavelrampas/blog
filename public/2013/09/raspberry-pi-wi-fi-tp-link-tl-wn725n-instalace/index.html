@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Pavel Rampas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace">
+    <meta name="description" content="Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace.">
     <title>Raspberry Pi – Wi-Fi TP-LINK TL-WN725N instalace - Pájův blog</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Pájův blog » RSS zdroj" href="https://blog.pavelrampas.cz/rss.xml">
@@ -26,20 +26,20 @@
         </span>
     </p>
     <p>
-        Aktuální návod najdete na&nbsp;<a href="http://raspberry.pavelrampas.cz/wi-fi">http://raspberry.pavelrampas.cz/wi-fi</a>
+        Aktuální návod najdete na&nbsp;<a href="https://raspberry.pavelrampas.cz/wi-fi">https://raspberry.pavelrampas.cz/wi-fi</a>
     </p>
     <p>
         Pro tuto wi-fi kartu je na Raspbian potřeba doinstalovat ovladač. Ten je možné případně stáhnout
         na jiném počítači a&nbsp;přenést si ho pomocí flash disku. Postupoval jsem podle návodu
-        na <a href="http://tech.enekochan.com/2013/05/29/tp-link-tl-wn725n-version-2-in-raspberry-pi/">tech.enekochan.com</a>,
+        na tech.enekochan.com/2013/05/29/tp-link-tl-wn725n-version-2-in-raspberry-pi/,
         kde jsou případně další varianty.
     </p>
     <p>
-        $ wget https://dl.dropboxusercontent.com/u/80256631/8188eu-20130209.tar.gz<br>
-        $ tar -zxvf 8188eu-20130209.tar.gz<br>
-        $ sudo install -p -m 644 8188eu.ko /lib/modules/`uname -r`/kernel/drivers/net/wireless<br>
-        $ sudo depmod -a<br>
-        $ sudo modprobe 8188eu
+        <pre><code>$ wget https://dl.dropboxusercontent.com/u/80256631/8188eu-20130209.tar.gz
+$ tar -zxvf 8188eu-20130209.tar.gz
+$ sudo install -p -m 644 8188eu.ko /lib/modules/`uname -r`/kernel/drivers/net/wireless
+$ sudo depmod -a
+$ sudo modprobe 8188eu</code></pre>
     </p>
     <p>
         <strong>Aktualizace 26.12.2013</strong><br>
@@ -50,12 +50,12 @@
         Verze se dá zjistit příkazem <strong>uname -r</strong>. V&nbsp;příkazech je třeba změnit název souboru.
     </p>
     <p>
-        $ wget https://dl.dropboxusercontent.com/u/80256631/8188eu-2013<strong>xxyy</strong>.tar.gz<br>
-        $ tar -zxvf 8188eu-2013<strong>xxyy</strong>.tar.gz<br>
-        $ sudo cp rtl8188eufw.bin /lib/firmware/rtlwifi<br>
-        $ sudo install -p -m 644 8188eu.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless<br>
-        $ sudo insmod /lib/modules/$(uname -r)/kernel/drivers/net/wireless/8188eu.ko<br>
-        $ sudo depmod -a
+        <pre><code>$ wget https://dl.dropboxusercontent.com/u/80256631/8188eu-2013<strong>xxyy</strong>.tar.gz
+$ tar -zxvf 8188eu-2013<strong>xxyy</strong>.tar.gz
+$ sudo cp rtl8188eufw.bin /lib/firmware/rtlwifi
+$ sudo install -p -m 644 8188eu.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless
+$ sudo insmod /lib/modules/$(uname -r)/kernel/drivers/net/wireless/8188eu.ko
+$ sudo depmod -a</code></pre>
     </p>
 </article>
 

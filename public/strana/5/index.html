@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Pavel Rampas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pájův blog - strana 5">
+    <meta name="description" content="Pájův blog - strana 5.">
     <title>Strana 5 - Pájův blog</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Pájův blog » RSS zdroj" href="https://blog.pavelrampas.cz/rss.xml">
@@ -26,7 +26,7 @@
         </span>
     </p>
     <p>
-        Další články o&nbsp;Raspberry Pi najdete na mé nové stránce&nbsp;<a href="http://raspberry.pavelrampas.cz/">http://raspberry.pavelrampas.cz/</a>
+        Další články o&nbsp;Raspberry Pi najdete na mé nové stránce&nbsp;<a href="https://raspberry.pavelrampas.cz/">https://raspberry.pavelrampas.cz/</a>
     </p>
     <p>
         <strong>OMXPlayer</strong> je přehrávač, který už je v&nbsp;Raspbianu předinstalovaný.
@@ -36,51 +36,49 @@
         parametr zadává video, které se má přehrát.
     </p>
     <p>
-        <em>#!/bin/bash</em><br>
-        <em>setterm -cursor off;</em><br>
-        <em>clear;</em><br>
-        <em>omxplayer –vol -2000 –font-size 50 –align center <em>“</em><em>$@<em>“</em></em>&nbsp;| echo <em>“</em><em>“</em>;</em><br>
-        <em>setterm -cursor on;</em>
+        <pre><code>#!/bin/bash
+setterm -cursor off;
+clear;
+omxplayer –vol -2000 –font-size 50 –align center “$@“ | echo ““;
+setterm -cursor on; </code></pre>
     </p>
     <p>
         OMXPlayer umí jako vstup použít pouze jeden soubor. Pokud tedy chceme přehrát složku
         obsahující například několik mp3 souborů dá se použít další script. Jako parametr přijímá cestu
         ke složce a&nbsp;ve stávajícím tvaru přehrává soubory náhodně a&nbsp;do nekonečna.
-        Po odkomentování řádku označeném <em>podle poradi</em> a&nbsp;zakomentování řádků <em>nahodne</em> přehraje
+        Po odkomentování řádku označeném <code>podle poradi</code> a&nbsp;zakomentování řádků <code>nahodne</code> přehraje
         soubory postupně a&nbsp;jenom jednou. Script také vypisuje název právě přehrávaného souboru.
     </p>
     <p>
-        <em>#!/bin/bash</em><br>
-        <em>FILEPATH=“$@“</em>
-    </p>
-    <p>
-        <em>while true; do</em><br>
-        <em>&nbsp; &nbsp; if ps ax | grep -v grep | grep omxplayer &gt; /dev/null</em><br>
-        <em>&nbsp; &nbsp; then</em><br>
-        <em>&nbsp; &nbsp; sleep 2;</em><br>
-        <em>else</em><br>
-        <em>&nbsp; &nbsp; #for file in $FILEPATH/*; do # podle poradi</em><br>
-        <em>&nbsp; &nbsp; while true; do # nahodne</em><br>
-        <em>&nbsp; &nbsp; &nbsp; &nbsp; file=$FILEPATH/`ls $FILEPATH/ |sort -R |tail -1`; # nahodne</em><br>
-        <em> <em>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em>clear;</em><br>
-        <em> <em>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em>echo <em>“</em>Prehravam: <em>“</em>$file;</em><br>
-        <em> <em>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em>omxplayer –vol -2000 <em>“</em>$file<em>“</em> &gt; /dev/null</em><br>
-        <em>&nbsp; &nbsp; done</em><br>
-        <em>fi</em><br>
-        <em>done</em>
+        <pre><code>#!/bin/bash
+FILEPATH=“$@“
+
+while true; do
+    if ps ax | grep -v grep | grep omxplayer > /dev/null then
+    sleep 2;
+else
+    #for file in $FILEPATH/*; do # podle poradi
+    while true; do # nahodne
+        file=$FILEPATH/`ls $FILEPATH/ |sort -R |tail -1`; # nahodne
+        clear;
+        echo “Prehravam: “$file;
+        omxplayer –vol -2000 “$file“ > /dev/null
+    done
+fi
+done</code></pre>
     </p>
     <p>
         <strong>Mplayer</strong> je další zajímavý přehrávač, který se ale nehodí pro přehrávání videa.
         Já ho používám pro přehrávání internetového rádia. Požadovanou stanici je možné
-        vybrat si na stránce <a href="http://www.mikesradioworld.com/">Mike’s Radio World</a> a&nbsp;přehrávání lze
+        vybrat si na stránce www.mikesradioworld.com a&nbsp;přehrávání lze
         spustit na pozadí následujícím příkazem.
     </p>
     <p>
-        <em>mplayer -playlist stanice.asx &lt; /dev/null &amp;&gt; /dev/null &amp;</em>
+        <pre><code>mplayer -playlist stanice.asx < /dev/null &> /dev/null &</code></pre>
     </p>
     <p>
         Zdroje:<br>
-        <a href="http://www.cenolan.com/2013/03/looping-video-playlist-omxplayer-raspberry-pi/">http://www.cenolan.com/2013/03/looping-video-playlist-omxplayer-raspberry-pi/</a><br>
+        http://www.cenolan.com/2013/03/looping-video-playlist-omxplayer-raspberry-pi/<br>
         <a href="http://stackoverflow.com/questions/414164/how-can-i-select-random-files-from-a-directory-in-bash">http://stackoverflow.com/questions/414164/how-can-i-select-random-files-from-a-directory-in-bash</a><br>
         <a href="http://www.abclinuxu.cz/poradna/linux/show/86195">http://www.abclinuxu.cz/poradna/linux/show/86195</a>
     </p>
@@ -96,14 +94,14 @@
         </span>
     </p>
     <p>
-        Nový článek o&nbsp;nastavení obrazu najdete na&nbsp;<a href="http://raspberry.pavelrampas.cz/nastaveni-obrazu">http://raspberry.pavelrampas.cz/nastaveni-obrazu</a>
+        Nový článek o&nbsp;nastavení obrazu najdete na&nbsp;<a href="https://raspberry.pavelrampas.cz/nastaveni-obrazu">https://raspberry.pavelrampas.cz/nastaveni-obrazu</a>
     </p>
     <p>
         Co dělat když se po zapnutí Raspberry na obrazovce nic neukáže. Raspberry detekuje HDMI monitor pouze při startu a&nbsp;pokud
         žádný nenajde nebude posílat žádná data. Pokud se tedy monitor zapíná současně s&nbsp;Raspberry a&nbsp;nenastartuje dostatečně rychle,
         může se stát, že detekce proběhne dřív než stihne monitor naběhnout. V&nbsp;takovém případě je možné změnit nastavení a&nbsp;nechat posílat
         data na HDMI pořád i&nbsp;když není monitor připojen. Stačí si otevřít <a href="http://elinux.org/RPiconfig">konfigurační soubor</a>
-        <em>/boot/config.txt</em> a&nbsp;odkomentovat řádek <em>hdmi_force_hotplug</em>.
+        <code>/boot/config.txt</code> a&nbsp;odkomentovat řádek <code>hdmi_force_hotplug</code>.
     </p>
 </article>
 <div class="article-separator"></div>
@@ -117,7 +115,7 @@
         </span>
     </p>
     <p>
-        Nový článek o&nbsp;napájení Raspberry Pi na&nbsp;<a href="http://raspberry.pavelrampas.cz/napajeni">http://raspberry.pavelrampas.cz/napajeni</a>
+        Nový článek o&nbsp;napájení Raspberry Pi na&nbsp;<a href="https://raspberry.pavelrampas.cz/napajeni">https://raspberry.pavelrampas.cz/napajeni</a>
     </p>
     <p>
         Zatím jsem pro napájení Raspberry používal <a href="http://www.czc.cz/d-link-hi-speed-usb-2-0-7-port-hub/21504/produkt">USB hub</a>,
@@ -144,32 +142,32 @@
     </p>
     <p>
         <a href="/img/2013/11/cesta-podel-malse/louka-a-nebe.jpg">
-            <img alt="Bylo krásně." src="/img/2013/11/cesta-podel-malse/louka-a-nebe-580.jpg" class="img-responsive" width="580" height="325">
+            <img alt="bylo krásně" src="/img/2013/11/cesta-podel-malse/louka-a-nebe-580.jpg" class="img-responsive" width="580" height="325">
         </a>
     </p>
     <p>
         <a href="/img/2013/11/cesta-podel-malse/kemp-hamr.jpg">
-            <img alt="Kemp Hamr." src="/img/2013/11/cesta-podel-malse/kemp-hamr-580.jpg" class="img-responsive" width="580" height="372">
+            <img alt="kemp Hamr" src="/img/2013/11/cesta-podel-malse/kemp-hamr-580.jpg" class="img-responsive" width="580" height="372">
         </a>
     </p>
     <p>
         <a href="/img/2013/11/cesta-podel-malse/list.jpg">
-            <img alt="List." src="/img/2013/11/cesta-podel-malse/list-580.jpg" class="img-responsive" width="580" height="375">
+            <img alt="list" src="/img/2013/11/cesta-podel-malse/list-580.jpg" class="img-responsive" width="580" height="375">
         </a>
     </p>
     <p>
         <a href="/img/2013/11/cesta-podel-malse/most.jpg">
-            <img alt="Most přes Zborovský potok." src="/img/2013/11/cesta-podel-malse/most-580.jpg" class="img-responsive" width="580" height="387">
+            <img alt="most přes Zborovský potok" src="/img/2013/11/cesta-podel-malse/most-580.jpg" class="img-responsive" width="580" height="387">
         </a>
     </p>
     <p>
         <a href="/img/2013/11/cesta-podel-malse/zborovsky-potok.jpg">
-            <img alt="Zborovský potok." src="/img/2013/11/cesta-podel-malse/zborovsky-potok-580.jpg" class="img-responsive" width="580" height="756">
+            <img alt="zborovský potok" src="/img/2013/11/cesta-podel-malse/zborovsky-potok-580.jpg" class="img-responsive" width="580" height="756">
         </a>
     </p>
     <p>
         <a href="/img/2013/11/cesta-podel-malse/mapa.jpg">
-            <img alt="Mapa." src="/img/2013/11/cesta-podel-malse/mapa-580.jpg" class="img-responsive" width="580" height="379">
+            <img alt="mapa" src="/img/2013/11/cesta-podel-malse/mapa-580.jpg" class="img-responsive" width="580" height="379">
         </a>
     </p>
 </article>
@@ -184,7 +182,7 @@
         </span>
     </p>
     <p>
-        Nový článek o&nbsp;krabičkách najdete na <a href="http://raspberry.pavelrampas.cz/krabicka">http://raspberry.pavelrampas.cz/krabicka</a>
+        Nový článek o&nbsp;krabičkách najdete na <a href="https://raspberry.pavelrampas.cz/krabicka">https://raspberry.pavelrampas.cz/krabicka</a>
     </p>
     <p>
         Tak jsem nahradil svou provizorní krabičku vyrobenou z&nbsp;Chevy. Inspiroval jsem se
@@ -192,7 +190,7 @@
     </p>
     <p>
         <a href="/img/2013/10/raspberry-pi-krabicka/raspberry-pi-krabicka.jpg">
-            <img alt="Krabička na Raspberry Pi." src="/img/2013/10/raspberry-pi-krabicka/raspberry-pi-krabicka-580.jpg" class="img-responsive" width="580" height="282">
+            <img alt="krabička na Raspberry Pi" src="/img/2013/10/raspberry-pi-krabicka/raspberry-pi-krabicka-580.jpg" class="img-responsive" width="580" height="282">
         </a>
     </p>
 </article>

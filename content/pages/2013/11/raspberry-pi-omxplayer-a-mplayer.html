@@ -2,7 +2,7 @@
 {% extends "templates/layout.html" %}
 {% block title %}Raspberry Pi – OMXPlayer a MPlayer{% endblock title %}
 {% block title_separator %} - {% endblock title_separator %}
-{% block description %}Raspberry Pi – OMXPlayer a MPlayer{% endblock description %}
+{% block description %}Raspberry Pi – OMXPlayer a MPlayer.{% endblock description %}
 {% block content %}
 <article>
     <h2>Raspberry Pi – OMXPlayer a&nbsp;MPlayer</h2>
@@ -14,7 +14,7 @@
         </span>
     </p>
     <p>
-        Další články o&nbsp;Raspberry Pi najdete na mé nové stránce&nbsp;<a href="http://raspberry.pavelrampas.cz/">http://raspberry.pavelrampas.cz/</a>
+        Další články o&nbsp;Raspberry Pi najdete na mé nové stránce&nbsp;<a href="https://raspberry.pavelrampas.cz/">https://raspberry.pavelrampas.cz/</a>
     </p>
     <p>
         <strong>OMXPlayer</strong> je přehrávač, který už je v&nbsp;Raspbianu předinstalovaný.
@@ -24,51 +24,49 @@
         parametr zadává video, které se má přehrát.
     </p>
     <p>
-        <em>#!/bin/bash</em><br>
-        <em>setterm -cursor off;</em><br>
-        <em>clear;</em><br>
-        <em>omxplayer –vol -2000 –font-size 50 –align center <em>“</em><em>$@<em>“</em></em>&nbsp;| echo <em>“</em><em>“</em>;</em><br>
-        <em>setterm -cursor on;</em>
+        <pre><code>#!/bin/bash
+setterm -cursor off;
+clear;
+omxplayer –vol -2000 –font-size 50 –align center “$@“ | echo ““;
+setterm -cursor on; </code></pre>
     </p>
     <p>
         OMXPlayer umí jako vstup použít pouze jeden soubor. Pokud tedy chceme přehrát složku
         obsahující například několik mp3 souborů dá se použít další script. Jako parametr přijímá cestu
         ke složce a&nbsp;ve stávajícím tvaru přehrává soubory náhodně a&nbsp;do nekonečna.
-        Po odkomentování řádku označeném <em>podle poradi</em> a&nbsp;zakomentování řádků <em>nahodne</em> přehraje
+        Po odkomentování řádku označeném <code>podle poradi</code> a&nbsp;zakomentování řádků <code>nahodne</code> přehraje
         soubory postupně a&nbsp;jenom jednou. Script také vypisuje název právě přehrávaného souboru.
     </p>
     <p>
-        <em>#!/bin/bash</em><br>
-        <em>FILEPATH=“$@“</em>
-    </p>
-    <p>
-        <em>while true; do</em><br>
-        <em>&nbsp; &nbsp; if ps ax | grep -v grep | grep omxplayer &gt; /dev/null</em><br>
-        <em>&nbsp; &nbsp; then</em><br>
-        <em>&nbsp; &nbsp; sleep 2;</em><br>
-        <em>else</em><br>
-        <em>&nbsp; &nbsp; #for file in $FILEPATH/*; do # podle poradi</em><br>
-        <em>&nbsp; &nbsp; while true; do # nahodne</em><br>
-        <em>&nbsp; &nbsp; &nbsp; &nbsp; file=$FILEPATH/`ls $FILEPATH/ |sort -R |tail -1`; # nahodne</em><br>
-        <em> <em>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em>clear;</em><br>
-        <em> <em>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em>echo <em>“</em>Prehravam: <em>“</em>$file;</em><br>
-        <em> <em>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em>omxplayer –vol -2000 <em>“</em>$file<em>“</em> &gt; /dev/null</em><br>
-        <em>&nbsp; &nbsp; done</em><br>
-        <em>fi</em><br>
-        <em>done</em>
+        <pre><code>#!/bin/bash
+FILEPATH=“$@“
+
+while true; do
+    if ps ax | grep -v grep | grep omxplayer > /dev/null then
+    sleep 2;
+else
+    #for file in $FILEPATH/*; do # podle poradi
+    while true; do # nahodne
+        file=$FILEPATH/`ls $FILEPATH/ |sort -R |tail -1`; # nahodne
+        clear;
+        echo “Prehravam: “$file;
+        omxplayer –vol -2000 “$file“ > /dev/null
+    done
+fi
+done</code></pre>
     </p>
     <p>
         <strong>Mplayer</strong> je další zajímavý přehrávač, který se ale nehodí pro přehrávání videa.
         Já ho používám pro přehrávání internetového rádia. Požadovanou stanici je možné
-        vybrat si na stránce <a href="http://www.mikesradioworld.com/">Mike’s Radio World</a> a&nbsp;přehrávání lze
+        vybrat si na stránce www.mikesradioworld.com a&nbsp;přehrávání lze
         spustit na pozadí následujícím příkazem.
     </p>
     <p>
-        <em>mplayer -playlist stanice.asx &lt; /dev/null &amp;&gt; /dev/null &amp;</em>
+        <pre><code>mplayer -playlist stanice.asx < /dev/null &> /dev/null &</code></pre>
     </p>
     <p>
         Zdroje:<br>
-        <a href="http://www.cenolan.com/2013/03/looping-video-playlist-omxplayer-raspberry-pi/">http://www.cenolan.com/2013/03/looping-video-playlist-omxplayer-raspberry-pi/</a><br>
+        http://www.cenolan.com/2013/03/looping-video-playlist-omxplayer-raspberry-pi/<br>
         <a href="http://stackoverflow.com/questions/414164/how-can-i-select-random-files-from-a-directory-in-bash">http://stackoverflow.com/questions/414164/how-can-i-select-random-files-from-a-directory-in-bash</a><br>
         <a href="http://www.abclinuxu.cz/poradna/linux/show/86195">http://www.abclinuxu.cz/poradna/linux/show/86195</a>
     </p>
