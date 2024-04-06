@@ -1,5 +1,6 @@
 RewriteEngine On
 RewriteRule ^category/([a-z])+/$ /kategorie/$1/ [L,R=301]
+RewriteRule ^feed/$ /rss.xml [L,R=301]
 
 RewriteRule ^19-tpb-afk-the-pirate-bay-away-from-keyboard/$ /2013/02/tpb-afk-the-pirate-bay-away-from-keyboard/ [L,R=301]
 RewriteRule ^44-konec-google-reader/$ /2013/03/konec-google-reader/ [L,R=301]
