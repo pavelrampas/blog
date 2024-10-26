@@ -6,16 +6,16 @@ body {
     margin: 0;
 }
 .container {
-    max-width: 580px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 0 15px;
 }
 a {
-    color: 	#800000;
+    color: #006996;
     text-decoration: underline;
 }
 a:hover {
-    color: #dc143c;
+    color: #962d00;
     text-decoration: underline;
 }
 p, ul, ol {
@@ -32,8 +32,9 @@ header a, header a:hover {
     text-decoration: none;
 }
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 /** Article **/
@@ -55,12 +56,17 @@ article {
 .article-meta {
     font-size: 0.9rem;
     margin-top: 5px;
+    color: #696969;
+}
+.article-meta a {
+    color: #696969;
 }
 .img-responsive {
     display: block;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    border-radius: 10px;
 }
 .img-description {
     font-style: italic;
