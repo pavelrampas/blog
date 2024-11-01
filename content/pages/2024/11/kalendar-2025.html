@@ -1,0 +1,38 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Kalendář 2025{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Kalendáře na rok 2025v&nbsp;několika variantách.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Kalendář 2025</h2>
+    <p class="article-meta">
+        <time datetime="2024-11-01">01. 11. 2024</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/internet/">Internet</a>,
+            <a href="/kategorie/kalendar/">Kalendář</a>
+        </span>
+    </p>
+    <p>
+        Stejně jako v&nbsp;předchozích letech přišel čas nových kalendářů na příští rok. Kalendáře si můžete stáhnout ve formátu pdf nebo ods.
+    </p>
+    <p>
+        Snad tam nemám tolik chyb jako v&nbsp;těch loňských.
+    </p>
+    <ul>
+        <li>Verze 1: <a href="/pdf/2024/11/kalendar-2025/kalendar-2025-v1.pdf">pdf</a>, <a href="/ods/2024/11/kalendar-2025/kalendar-2025-v1.ods">ods</a></li>
+        <li>Verze 2: <a href="/pdf/2024/11/kalendar-2025/kalendar-2025-v2.pdf">pdf</a>, <a href="/ods/2024/11/kalendar-2025/kalendar-2025-v2.ods">ods</a></li>
+        <li>Verze 3: <a href="/pdf/2024/11/kalendar-2025/kalendar-2025-v3.pdf">pdf</a>, <a href="/ods/2024/11/kalendar-2025/kalendar-2025-v3.ods">ods</a></li>
+        <li>Verze 4: <a href="/pdf/2024/11/kalendar-2025/kalendar-2025-v4.pdf">pdf</a>, <a href="/ods/2024/11/kalendar-2025/kalendar-2025-v4.ods">ods</a></li>
+        <li>Verze 5: <a href="/pdf/2024/11/kalendar-2025/kalendar-2025-v5.pdf">pdf</a>, <a href="/ods/2024/11/kalendar-2025/kalendar-2025-v5.ods">ods</a></li>
+        <li>Verze 6: <a href="/pdf/2024/11/kalendar-2025/kalendar-2025-v6.pdf">pdf</a>, <a href="/ods/2024/11/kalendar-2025/kalendar-2025-v6.ods">ods</a></li>
+    </ul>
+</article>
+{{ macros::navigation(
+    prev_url="/2024/04/cekani-na-jaro/",
+    prev_text="«&nbsp;Čekání na jaro",
+    next_url="",
+    next_text=""
+) }}
+{% endblock content %}

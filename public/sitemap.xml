@@ -2,7 +2,7 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://blog.pavelrampas.cz</loc>
-        <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+        <lastmod>2024-11-01T18:01:02+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2013/</loc>
@@ -42,7 +42,7 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2024/</loc>
-        <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+        <lastmod>2024-11-01T18:01:02+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/akce/</loc>
@@ -54,11 +54,11 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/internet/</loc>
-        <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+        <lastmod>2024-11-01T18:01:02+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/kalendar/</loc>
-        <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+        <lastmod>2024-11-01T18:01:02+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/knihy/</loc>
@@ -87,6 +87,10 @@
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/zahrada/</loc>
         <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://blog.pavelrampas.cz/2024/11/kalendar-2025/</loc>
+        <lastmod>2024-11-01T18:01:02+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2024/04/cekani-na-jaro/</loc>
