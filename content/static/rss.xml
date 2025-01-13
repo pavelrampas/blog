@@ -5,8 +5,15 @@
 		<atom:link href="https://blog.pavelrampas.cz/rss.xml" rel="self" type="application/rss+xml"/>
 		<link>https://blog.pavelrampas.cz</link>
 		<description>Pájovo osobní blog o všem možném. Prostě co mě zrovna napadne.</description>
-		<lastBuildDate>Fri, 01 Nov 2024 16:01:02 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 12 Jan 2025 22:00:00 +0000</lastBuildDate>
 		<language>cs-CZ</language>
+		<item>
+			<title>Rok 2024</title>
+			<link>https://blog.pavelrampas.cz/2025/01/rok-2024/</link>
+			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/01/rok-2024/</guid>
+			<pubDate>Sun, 12 Jan 2025 22:00:00 +0000</pubDate>
+			<description><![CDATA[Duolingo mi vždy na konci roku posílá přehled jak jsem si vedl. Říkal jsem si, že by mohlo být zajímavé kouknout na přehledy a statistiky i z nějakých dalších stránek.]]></description>
+		</item>
 		<item>
 			<title>Kalendář 2025</title>
 			<link>https://blog.pavelrampas.cz/2024/11/kalendar-2025/</link>
@@ -69,13 +76,6 @@
 			<guid isPermaLink="false">https://blog.pavelrampas.cz/2021/01/scitani-na-krmitku-2021/</guid>
 			<pubDate>Sun, 10 Jan 2021 19:52:43 +0000</pubDate>
 			<description><![CDATA[Stejně jako loni jsem se zapojil do sčítání ptáků na krmítku a i letos mám pěkný seznam. vrabec polní: 13 pěnkava obecná: 5 sýkora koňadra: 3 sýkora modřinka: 3 bažant obecný: 3 červenka obecná: 1 strakapoud velký: 1 poštolka obecná: 1]]></description>
-		</item>
-		<item>
-			<title>Kalendář 2021</title>
-			<link>https://blog.pavelrampas.cz/2020/12/kalendar-2021/</link>
-			<guid isPermaLink="false">https://blog.pavelrampas.cz/2020/12/kalendar-2021/</guid>
-			<pubDate>Sun, 06 Dec 2020 18:33:46 +0000</pubDate>
-			<description><![CDATA[Stejně jako loni jsem připravil kalendáře na příští rok. PDF i zdrojové ODS jsou ke stažení na adrese  https://uloz.to/folder/Scdtk0NTOh5x Nebo můžete jednotlivé kalendáře stahovat přímo tady na mém webu pomocí následujících odkazů. Kalendář 2021 verze 1 Kalendář 2021 verze 2 Kalendář 2021 verze 3 Kalendář 2021 verze 4 Kalendář 2021 verze 5 Kalendář 2021 verze [&#8230;]]]></description>
 		</item>
 	</channel>
 </rss>
