@@ -1,0 +1,43 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Sčítání na krmítku 2025{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Sčítání na krmítku 2025.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Sčítání na krmítku 2025</h2>
+    <p class="article-meta">
+        <time datetime="2025-01-13">13. 01. 2025</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/internet/">Internet</a>,
+            <a href="/kategorie/zahrada/">Zahrada</a>
+        </span>
+    </p>
+    <p>
+        Zase jsem <a href="https://ptacihodinka.birdlife.cz/">sčítal ptáky na krmítku</a> a&nbsp;opět mám pěkný seznam. Letos jsem taky zjistil,
+        že si můžu stáhnout obrázek s&nbsp;mým sčítáním.
+    </p>
+    <ul>
+        <li>vrabec polní: 9</li>
+        <li>sýkora koňadra: 8</li>
+        <li>kos černý: 5</li>
+        <li>sýkora modřinka: 2</li>
+        <li>pěnkava obecná: 1</li>
+        <li>straka obecná: 1</li>
+        <li>sojka obecná: 1</li>
+        <li>hrdlička zahradní: 1</li>
+    </ul>
+    <p>
+        <a href="/img/2025/01/scitani-na-krmitku-2025/ptaci-hodinka.jpg">
+            <img alt="ptačí hodinka" src="/img/2025/01/scitani-na-krmitku-2025/ptaci-hodinka-580.jpg" class="img-responsive" width="580" height="725">
+        </a>
+    </p>
+</article>
+{{ macros::navigation(
+    prev_url="/2025/01/rok-2024/",
+    prev_text="«&nbsp;Rok 2024",
+    next_url="",
+    next_text=""
+) }}
+{% endblock content %}
