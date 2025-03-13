@@ -5,8 +5,15 @@
 		<atom:link href="https://blog.pavelrampas.cz/rss.xml" rel="self" type="application/rss+xml"/>
 		<link>https://blog.pavelrampas.cz</link>
 		<description>Pájovo osobní blog o všem možném. Prostě co mě zrovna napadne.</description>
-		<lastBuildDate>Mon, 13 Jan 2025 22:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 12 Mar 2025 21:00:00 +0000</lastBuildDate>
 		<language>cs-CZ</language>
+		<item>
+			<title>Kingdom Come: Deliverance 2</title>
+			<link>https://blog.pavelrampas.cz/2025/03/kingdom-come-deliverance-2/</link>
+			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/03/kingdom-come-deliverance-2/</guid>
+			<pubDate>Wed, 12 Mar 2025 21:00:00 +0000</pubDate>
+			<description><![CDATA[Kingdom Come: Deliverance 2. Jedna z nejlepších her.]]></description>
+		</item>
 		<item>
 			<title>Sčítání na krmítku 2025</title>
 			<link>https://blog.pavelrampas.cz/2025/01/scitani-na-krmitku-2025/</link>
@@ -69,13 +76,6 @@
 			<guid isPermaLink="false">https://blog.pavelrampas.cz/2022/01/scitani-na-krmitku-2022/</guid>
 			<pubDate>Sun, 09 Jan 2022 15:06:25 +0000</pubDate>
 			<description><![CDATA[Jako každý rok jsem sčítal ptáky na krmítku a opět mám pěkný seznam. vrabec polní: 16 pěnkava obecná: 2 sýkora koňadra: 5 zvonek zelený: 5 sýkora modřinka: 2 bažant obecný: 1 strakapoud velký: 1 kos černý: 1 dlask tlustozobý: 1 brhlík lesní: 1]]></description>
-		</item>
-		<item>
-			<title>Kalendář 2022</title>
-			<link>https://blog.pavelrampas.cz/2021/12/kalendar-2022/</link>
-			<guid isPermaLink="false">https://blog.pavelrampas.cz/2021/12/kalendar-2022/</guid>
-			<pubDate>Sun, 05 Dec 2021 11:58:02 +0000</pubDate>
-			<description><![CDATA[Jako vždy jsem připravil kalendáře na příští rok. PDF i zdrojové ODS soubory jsou ke stažení na adrese https://uloz.to/folder/xpy1eL0h1aCZ Nebo můžete jednotlivé kalendáře stahovat přímo tady na mém webu pomocí následujících odkazů. Kalendář 2022 verze 1 Kalendář 2022 verze 2 Kalendář 2022 verze 3 Kalendář 2022 verze 4 Kalendář 2022 verze 5 Kalendář 2022 verze [&#8230;]]]></description>
 		</item>
 	</channel>
 </rss>
