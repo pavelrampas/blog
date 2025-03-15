@@ -1,4 +1,9 @@
 RewriteEngine On
+
+# rewrite www to non www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
 RewriteRule ^category/([a-z])+/$ /kategorie/$1/ [L,R=301]
 RewriteRule ^feed/$ /rss.xml [L,R=301]
 
@@ -52,6 +57,13 @@ RewriteRule ^422-scitani-na-krmitku-2023/$ /2023/01/scitani-na-krmitku-2023/ [L,
 RewriteRule ^427-kalendar-2024/$ /2023/11/kalendar-2024/ [L,R=301]
 RewriteRule ^439-scitani-na-krmitku-2024/$ /2024/01/scitani-na-krmitku-2024/ [L,R=301]
 
+<IfModule mod_mime.c>
+    AddType application/manifest+json webmanifest
+
+    AddDefaultCharset utf-8
+    AddCharset utf-8 .css
+</IfModule>
+
 # expires caching
 <IfModule mod_expires.c>
     ExpiresActive On
@@ -79,10 +91,18 @@ RewriteRule ^439-scitani-na-krmitku-2024/$ /2024/01/scitani-na-krmitku-2024/ [L,
 
 # Security
 <IfModule mod_headers.c>
-	Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
-    Header set Content-Security-Policy "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'self'; font-src 'self' data:;"
+    Header set Cache-Control "max-age=31536000"
+    <FilesMatch "\.(htm||html|php)$">
+        Header set Cache-Control "max-age=180"
+    </FilesMatch>
+    <FilesMatch "\.(css|js|webmanifest|gif|jpeg|jpg|png|pdf|json|ico|icon)$">
+        Header set Cache-Control "max-age=31536000, immutable"
+    </FilesMatch>
+    <FilesMatch "\.html$">
+        Header set Content-Security-Policy "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'self'; font-src 'self' data:; frame-ancestors 'self';"
+    </FilesMatch>
+    Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
     Header set X-Content-Type-Options nosniff
-    Header set X-Frame-Options DENY
-    Header set X-XSS-Protection "1; mode=block"
     Header set Referrer-Policy "no-referrer"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), fullscreen=(self)"
 </IfModule>
