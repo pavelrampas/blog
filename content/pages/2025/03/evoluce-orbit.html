@@ -1,0 +1,31 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Orbit{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Vývoj balení žvýkaček Orbit.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Evoluce Orbit</h2>
+    <p class="article-meta">
+        <time datetime="2025-03-29">29. 03. 2025</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/ruzne/">Různé</a>
+        </span>
+    </p>
+    <p>
+        Jak šel čas s&nbsp;balením Orbit v&nbsp;posledních letech. Tímhle tempem budu za chvíli nakupovat XXL baletí s&nbsp;jedním kusem.
+    </p>
+    <p>
+        <a href="/img/2025/03/orbit/orbit.jpg">
+            <img alt="Orbit evoluce balení" src="/img/2025/03/orbit/orbit-580.jpg" class="img-responsive" width="580" height="281">
+        </a>
+    </p>
+</article>
+{{ macros::navigation(
+    prev_url="/2025/03/kingdom-come-deliverance-2/",
+    prev_text="«&nbsp;Kingdom Come: Deliverance&nbsp;2",
+    next_url="",
+    next_text=""
+) }}
+{% endblock content %}
