@@ -11,7 +11,7 @@ body {
     padding: 0 15px;
 }
 a {
-    color: #006996;
+    color: #005C85;
     text-decoration: underline;
 }
 a:hover {
@@ -57,10 +57,10 @@ article {
 .article-meta {
     font-size: 0.9rem;
     margin-top: 5px;
-    color: #696969;
+    color: #595959;
 }
 .article-meta a {
-    color: #696969;
+    color: #595959;
 }
 .img-responsive {
     display: block;
