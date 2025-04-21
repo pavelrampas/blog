@@ -1,0 +1,31 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Velikonoční beránek{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Velikonoční beránek podle receptu od Florentýny.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Velikonoční beránek</h2>
+    <p class="article-meta">
+        <time datetime="2025-04-21">21. 04. 2025</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/vareni/">Vaření</a>
+        </span>
+    </p>
+    <p>
+        <a href="https://blog.pavelrampas.cz/2024/04/cekani-na-jaro/">Loni jsem zkoušel malého</a>. Tak letos jsem se pustil do velkého. Až na ulomené uši a&nbsp;trochu uloupnutý čumák se celkem povedl.
+    </p>
+    <p>
+        <a href="/img/2025/04/velikonocni-beranek/velikonocni-beranek.jpg">
+            <img alt="Velikonoční beránek" src="/img/2025/04/velikonocni-beranek/velikonocni-beranek-580.jpg" class="img-responsive" width="580" height="392">
+        </a>
+    </p>
+</article>
+{{ macros::navigation(
+    prev_url="/2025/03/evoluce-orbit/",
+    prev_text="«&nbsp;Evoluce Orbit",
+    next_url="",
+    next_text=""
+) }}
+{% endblock content %}

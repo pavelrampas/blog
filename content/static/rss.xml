@@ -5,8 +5,15 @@
 		<atom:link href="https://blog.pavelrampas.cz/rss.xml" rel="self" type="application/rss+xml"/>
 		<link>https://blog.pavelrampas.cz</link>
 		<description>Pájovo osobní blog o všem možném. Prostě co mě zrovna napadne.</description>
-		<lastBuildDate>Sat, 29 Mar 2025 16:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 21 Apr 2025 20:00:00 +0000</lastBuildDate>
 		<language>cs-CZ</language>
+		<item>
+			<title>Velikonoční beránek</title>
+			<link>https://blog.pavelrampas.cz/2025/04/velikonocni-beranek/</link>
+			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/04/velikonocni-beranek/</guid>
+			<pubDate>Mon, 21 Apr 2025 20:00:00 +0000</pubDate>
+			<description><![CDATA[Loni jsem zkoušel malého. Tak letos jsem se pustil do velkého. Až na ulomené uši a trochu uloupnutý čumák se celkem povedl.]]></description>
+		</item>
 		<item>
 			<title>Evoluce Orbit</title>
 			<link>https://blog.pavelrampas.cz/2025/03/evoluce-orbit/</link>
@@ -69,13 +76,6 @@
 			<guid isPermaLink="false">https://blog.pavelrampas.cz/2023/01/scitani-na-krmitku-2023/</guid>
 			<pubDate>Sun, 08 Jan 2023 15:13:22 +0000</pubDate>
 			<description><![CDATA[Letošní sčítání na krmítku bylo trochu slabší. Je takový teplo, že ty ptáci nemají o krmítko zájem a moc na něj nelétají. vrabec polní: 13 pěnkava obecná: 1 sýkora koňadra: 4 sýkora modřinka: 6 brhlík lesní: 1 červenka obecná: 1 šoupálek: 1]]></description>
-		</item>
-		<item>
-			<title>Kalendář 2023</title>
-			<link>https://blog.pavelrampas.cz/2022/11/kalendar-2023/</link>
-			<guid isPermaLink="false">https://blog.pavelrampas.cz/2022/11/kalendar-2023/</guid>
-			<pubDate>Sat, 05 Nov 2022 19:36:32 +0000</pubDate>
-			<description><![CDATA[Jako vždy jsem připravil kalendáře na příští rok. PDF i zdrojové ODS soubory jsou ke stažení na adrese https://uloz.to/folder/Tis7x8XgToPT Nebo můžete jednotlivé kalendáře stahovat přímo tady na mém webu pomocí následujících odkazů. Kalendář 2023 verze 1 Kalendář 2023 verze 2 Kalendář 2023 verze 3 Kalendář 2023 verze 4 Kalendář 2023 verze 5 Kalendář 2023 verze [&#8230;]]]></description>
 		</item>
 	</channel>
 </rss>
