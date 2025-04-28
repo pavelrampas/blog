@@ -2,7 +2,7 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://blog.pavelrampas.cz</loc>
-        <lastmod>2025-04-21T20:00:00+00:00</lastmod>
+        <lastmod>2025-04-28T21:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2013/</loc>
@@ -46,7 +46,7 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2025/</loc>
-        <lastmod>2025-04-21T20:00:00+00:00</lastmod>
+        <lastmod>2025-04-28T21:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/akce/</loc>
@@ -66,7 +66,7 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/knihy/</loc>
-        <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+        <lastmod>2025-04-28T21:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/mobil/</loc>
@@ -82,7 +82,7 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/ruzne/</loc>
-        <lastmod>2025-03-29T16:00:00+00:00</lastmod>
+        <lastmod>2025-04-28T21:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/vareni/</loc>
@@ -91,6 +91,10 @@
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/zahrada/</loc>
         <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://blog.pavelrampas.cz/2025/04/trifazove-buzeni/</loc>
+        <lastmod>2025-04-28T21:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2025/04/velikonocni-beranek/</loc>
