@@ -19,7 +19,7 @@ a:hover {
     text-decoration: underline;
 }
 p, ul, ol {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 /** Header **/
@@ -45,10 +45,10 @@ h2 {
 }
 h2 a {
     color: #333;
-    text-decoration: none;
+    text-decoration: underline;
 }
 h2 a:hover {
-    color: #333;
+    color: #962d00;
     text-decoration: underline;
 }
 article {
@@ -61,6 +61,9 @@ article {
 }
 .article-meta a {
     color: #595959;
+}
+.article-meta a:hover {
+    color: #962d00;
 }
 .img-responsive {
     display: block;
