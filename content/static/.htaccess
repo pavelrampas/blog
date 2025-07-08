@@ -92,7 +92,10 @@ RewriteRule ^439-scitani-na-krmitku-2024/$ /2024/01/scitani-na-krmitku-2024/ [L,
 # Security
 <IfModule mod_headers.c>
     Header set Cache-Control "max-age=31536000"
-    <FilesMatch "\.(htm||html|php)$">
+    <FilesMatch "\.(php)$">
+        Header set Cache-Control "max-age=0"
+    </FilesMatch>
+    <FilesMatch "\.(htm||html)$">
         Header set Cache-Control "max-age=180"
     </FilesMatch>
     <FilesMatch "\.(css|js|webmanifest|gif|jpeg|jpg|png|pdf|json|ico|icon)$">
