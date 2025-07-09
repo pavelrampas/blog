@@ -1,4 +1,7 @@
-loadComments();
+const commentsDiv = document.getElementById('comments');
+if (commentsDiv) {
+    loadComments();
+}
 
 // Load comments
 function loadComments() {
