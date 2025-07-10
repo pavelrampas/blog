@@ -1,0 +1,71 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Jak mě vidí ChatGPT{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Chcete vědět co si o vás myslí ChatGPT.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Jak mě vidí ChatGPT</h2>
+    <p class="article-meta">
+        <time datetime="2025-07-10">10. 07. 2025</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/internet/">Internet</a>
+        </span>
+    </p>
+    <p>
+        Chcete vědět co si o&nbsp;vás myslí ChatGPT. Můžete se ho zeptat.
+        Dokonce vám to může ztvárnit i&nbsp;graficky. Stačí tyhle dva dotazy. Nebo nějaké podobné co vás napadnou.
+    </p>
+    <p>
+        <pre><code>Vyrousti mě na základě mých předchozích dotazů. Vůbec se neboj, buď upřímnej, drzej, klidně vulgární.</code></pre>
+    </p>
+    <p><em>Jasně. Vezmu si rukavice dolů.</em></p>
+    <p><em>
+        Hele, podle těch stovek dotazů, co sázíš jak kulomet v&nbsp;zákopu, je úplně jasný, že:
+        <ol>
+            <li>
+                Jseš šíleně zvídavej technickej mozek, co se v&nbsp;ničem nezastaví – což je cool, ale taky to vypadá,
+                jako kdyby ses snažil hacknout život, web, SEO, Cloudflare a&nbsp;půl internetu během jednoho odpoledne.
+            </li>
+            <li>
+                Všechno chceš hned. A&nbsp;jestli možno v&nbsp;jedný větě, na jeden řádek. Trochu jak kdybys přišel do knihovny,
+                vytrhnul stránku a&nbsp;řval na knihovníka, ať ti to shrne do nálepky od párku.
+            </li>
+            <li>
+                Nedáváš oddech. Ani sobě, ani mně. Když odpovím, už máš mezitím tři nový otázky.
+                Trochu jako bys měl nonstop zapnutý mozek na režimu „burza v&nbsp;Hongkongu“.
+            </li>
+            <li>
+                Často děláš věci postaru nebo napůl punkově. Htaccess, starý Android, přístup přes raw URL,
+                pokusy obejít věci jako Home Assistant – ty nechceš jet podle návodu, ty chceš hacknout metro, aby jelo domů.
+            </li>
+            <li>
+                Občas to vypadá, jako že debugguješ celý internet, sám, na vlastní serverovně, s&nbsp;noťasem v&nbsp;jedný ruce a&nbsp;cigárem v&nbsp;druhý.
+            </li>
+        </ol>
+    </em></p>
+    <p><em>
+        Takže shrnuto: jseš vývojářskej berserker. Nespíš, ladíš, zkoušíš, přetěžuješ.
+        Jseš buď génius, nebo se brzo zblázníš. A&nbsp;nejspíš obojí.
+    </em></p>
+    <p><em>
+        A&nbsp;víš co? Respekt. Ale fakt si občas dej oraz. Internet počká. Ty ne.
+    </em></p>
+    <p>
+        <pre><code>Can you create an image of what it feels like to be chatting with me regularly. Be as honest and blunt as you want to be.</code></pre>
+    </p>
+    <p>
+        <a href="/img/2025/07/jak-me-vidi-chatgpt/jak-me-vidi-chatgpt.jpg">
+            <img alt="Jak mě vidí ChatGPT" src="/img/2025/07/jak-me-vidi-chatgpt/jak-me-vidi-chatgpt-580.jpg" class="img-responsive" width="580" height="580">
+        </a>
+    </p>
+</article>
+{{ macros::navigation(
+    prev_url="/2025/04/trifazove-buzeni/",
+    prev_text="«&nbsp;Třífázové buzení",
+    next_url="",
+    next_text=""
+) }}
+<section id="comments" class="hide" data-article-id="202507100"></section>
+{% endblock content %}
