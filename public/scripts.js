@@ -1,13 +1,70 @@
+const apiUrl = 'https://blog.pavelrampas.cz';
+const apiAuth = 'd58e3582afa99040e27b92b13c8f2280';
+
+// Load comments
 const commentsDiv = document.getElementById('comments');
 if (commentsDiv) {
     loadComments();
+}
+
+// Load comments count
+const articleMetaElements = document.querySelectorAll('.article-meta[data-article-id]');
+if (articleMetaElements.length > 0) {
+    loadCommentsCount(articleMetaElements);
+}
+
+// Load comments count
+function loadCommentsCount(articlesMeta) {
+    const articleIds = [];
+    articlesMeta.forEach(article => {
+        articleIds.push(article.dataset.articleId);
+    });
+
+    fetch(apiUrl + '/api/v1/comments-count/?' + articleIds.map(id => `ids[]=${id}`).join('&'), {
+        method: 'GET',
+        headers: {'Authorization': apiAuth},
+        credentials: 'include'
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Check if the response contains an error
+        if (data.errors) {
+            alert(data.errors[0].detail);
+            return;
+        }
+
+        if (data.data.length > 0) {
+            articlesMeta.forEach(articleMeta => {
+                for (const commentCount of data.data) {
+                    if (parseInt(commentCount.id) === parseInt(articleMeta.dataset.articleId)) {
+                        // Get the article URL
+                        const url = articleMeta.closest('article').getElementsByTagName('h2')[0].getElementsByTagName('a')[0].href;
+
+                        // Add separator
+                        const separator = document.createElement('span');
+                        separator.className = 'article-meta-separator';
+                        separator.textContent = ' | ';
+                        articleMeta.appendChild(separator);
+
+                        // Add comment count with link
+                        const countElement = document.createElement('span');
+                        countElement.className = 'article-meta-comments-count';
+                        countElement.innerHTML = '<a href="' + url + '#comments">' + formatCommentCount(commentCount.attributes.count) + '</a>';
+                        articleMeta.appendChild(countElement);
+                        break;
+                    }
+                }
+            });
+        }
+    })
+    .catch(error => console.error('Error loading comments count:', error));
 }
 
 // Load comments
 function loadComments() {
     fetch(apiRequestUrl(), {
         method: 'GET',
-        headers: {'Authorization': 'd58e3582afa99040e27b92b13c8f2280'},
+        headers: {'Authorization': apiAuth},
         credentials: 'include'
     })
     .then(response => response.json())
@@ -117,7 +174,7 @@ function addComment() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'd58e3582afa99040e27b92b13c8f2280'
+            'Authorization': apiAuth
         },
         credentials: 'include',
         body: JSON.stringify({
@@ -170,7 +227,7 @@ function addCommentEventListener() {
 // Function to construct the API request URL
 function apiRequestUrl() {
     const commentsDiv = document.getElementById('comments');
-    return 'https://blog.pavelrampas.cz/api/v1/comments/index.php?article=' + commentsDiv.dataset.articleId;
+    return apiUrl + '/api/v1/comments/index.php?article=' + commentsDiv.dataset.articleId;
 }
 
 // Function to create a comment element
@@ -186,4 +243,17 @@ function createCommentElement(comment) {
         + '</p>'
         + '<p>' + comment.attributes.comment + '</p>';
     return commentElement;
+}
+
+// Function to format comment count text
+function formatCommentCount(count) {
+    if (count === 0) {
+        return '0 komentářů';
+    } else if (count === 1) {
+        return '1 komentář';
+    } else if (count === 2 || count === 3 || count === 4) {
+        return count + ' komentáře';
+    } else {
+        return count + ' komentářů';
+    }
 }
