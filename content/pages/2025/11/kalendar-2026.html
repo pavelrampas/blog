@@ -1,0 +1,36 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Kalendář 2026{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Kalendáře na rok 2026 v&nbsp;několika variantách.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Kalendář 2026</h2>
+    <p class="article-meta">
+        <time datetime="2025-11-08">08. 11. 2025</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/internet/">Internet</a>,
+            <a href="/kategorie/kalendar/">Kalendář</a>
+        </span>
+    </p>
+    <p>
+        Nové kalendáře na rok 2026 jsou tu. Kalendáře si můžete stáhnout ve formátu pdf nebo ods.
+    </p>
+    <ul>
+        <li>Verze 1: <a href="/pdf/2025/11/kalendar-2026/kalendar-2026-v1.pdf">pdf</a>, <a href="/ods/2025/11/kalendar-2026/kalendar-2026-v1.ods">ods</a></li>
+        <li>Verze 2: <a href="/pdf/2025/11/kalendar-2026/kalendar-2026-v2.pdf">pdf</a>, <a href="/ods/2025/11/kalendar-2026/kalendar-2026-v2.ods">ods</a></li>
+        <li>Verze 3: <a href="/pdf/2025/11/kalendar-2026/kalendar-2026-v3.pdf">pdf</a>, <a href="/ods/2025/11/kalendar-2026/kalendar-2026-v3.ods">ods</a></li>
+        <li>Verze 4: <a href="/pdf/2025/11/kalendar-2026/kalendar-2026-v4.pdf">pdf</a>, <a href="/ods/2025/11/kalendar-2026/kalendar-2026-v4.ods">ods</a></li>
+        <li>Verze 5: <a href="/pdf/2025/11/kalendar-2026/kalendar-2026-v5.pdf">pdf</a>, <a href="/ods/2025/11/kalendar-2026/kalendar-2026-v5.ods">ods</a></li>
+        <li>Verze 6: <a href="/pdf/2025/11/kalendar-2026/kalendar-2026-v6.pdf">pdf</a>, <a href="/ods/2025/11/kalendar-2026/kalendar-2026-v6.ods">ods</a></li>
+    </ul>
+</article>
+{{ macros::navigation(
+    prev_url="/2025/07/jak-me-vidi-chatgpt/",
+    prev_text="«&nbsp;Jak mě vidí ChatGPT",
+    next_url="",
+    next_text=""
+) }}
+<section id="comments" class="hide" data-article-id="202511080"></section>
+{% endblock content %}

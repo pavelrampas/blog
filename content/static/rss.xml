@@ -5,8 +5,15 @@
 		<atom:link href="https://blog.pavelrampas.cz/rss.xml" rel="self" type="application/rss+xml"/>
 		<link>https://blog.pavelrampas.cz</link>
 		<description>Pájovo osobní blog o všem možném. Prostě co mě zrovna napadne.</description>
-		<lastBuildDate>Thu, 10 Jul 2025 22:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 08 Nov 2025 22:00:00 +0000</lastBuildDate>
 		<language>cs-CZ</language>
+		<item>
+			<title>Kalendář 2026</title>
+			<link>https://blog.pavelrampas.cz/2025/11/kalendar-2026/</link>
+			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/11/kalendar-2026/</guid>
+			<pubDate>Sat, 08 Nov 2025 22:00:00 +0000</pubDate>
+			<description><![CDATA[Nové kalendáře na rok 2026 jsou tu. Kalendáře si můžete stáhnout ve formátu pdf nebo ods.]]></description>
+		</item>
 		<item>
 			<title>Jak mě vidí ChatGPT</title>
 			<link>https://blog.pavelrampas.cz/2025/07/jak-me-vidi-chatgpt/</link>
@@ -69,13 +76,6 @@
 			<guid isPermaLink="false">https://blog.pavelrampas.cz/2024/04/cekani-na-jaro/</guid>
 			<pubDate>Fri, 05 Apr 2024 21:00:00 +0000</pubDate>
 			<description><![CDATA[Není to tak, že bych já čekal na jaro, kterého bych se nejspíš ani nedočkal, protože přišlo rovnou léto. Čekání na jaro je totiž název nejnovější kuchařky z řady kuchařek od Florentýny.]]></description>
-		</item>
-		<item>
-			<title>Sčítání na krmítku 2024</title>
-			<link>https://blog.pavelrampas.cz/2024/01/scitani-na-krmitku-2024/</link>
-			<guid isPermaLink="false">https://blog.pavelrampas.cz/2024/01/scitani-na-krmitku-2024/</guid>
-			<pubDate>Sun, 14 Jan 2024 21:34:58 +0000</pubDate>
-			<description><![CDATA[kos černý: 5 sýkora koňadra: 4 sýkora modřinka: 2 pěnkava obecná: 2 strakapoud velký: 1 bažant obecný: 1 červenka obecná: 1 vrabec polní: 1 straka obecná: 1 dlask tlustozobý: 1 zvonek zelený: 12]]></description>
 		</item>
 	</channel>
 </rss>
