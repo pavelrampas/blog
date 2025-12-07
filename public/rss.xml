@@ -5,8 +5,15 @@
 		<atom:link href="https://blog.pavelrampas.cz/rss.xml" rel="self" type="application/rss+xml"/>
 		<link>https://blog.pavelrampas.cz</link>
 		<description>Pájovo osobní blog o všem možném. Prostě co mě zrovna napadne.</description>
-		<lastBuildDate>Sat, 08 Nov 2025 22:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 07 Dec 2025 22:00:00 +0000</lastBuildDate>
 		<language>cs-CZ</language>
+		<item>
+			<title>Veverka</title>
+			<link>https://blog.pavelrampas.cz/2025/12/veverka/</link>
+			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/12/veverka/</guid>
+			<pubDate>Sun, 07 Dec 2025 22:00:00 +0000</pubDate>
+			<description><![CDATA[Opožděně jedna fotky veverky z podzimu]]></description>
+		</item>
 		<item>
 			<title>Kalendář 2026</title>
 			<link>https://blog.pavelrampas.cz/2025/11/kalendar-2026/</link>
@@ -69,13 +76,6 @@
 			<guid isPermaLink="false">https://blog.pavelrampas.cz/2024/11/kalendar-2025/</guid>
 			<pubDate>Fri, 01 Nov 2024 16:01:02 +0000</pubDate>
 			<description><![CDATA[Stejně jako v předchozích letech přišel čas nových kalendářů na příští rok. Kalendáře si můžete stáhnout ve formátu pdf nebo ods.]]></description>
-		</item>
-		<item>
-			<title>Čekání na jaro</title>
-			<link>https://blog.pavelrampas.cz/2024/04/cekani-na-jaro/</link>
-			<guid isPermaLink="false">https://blog.pavelrampas.cz/2024/04/cekani-na-jaro/</guid>
-			<pubDate>Fri, 05 Apr 2024 21:00:00 +0000</pubDate>
-			<description><![CDATA[Není to tak, že bych já čekal na jaro, kterého bych se nejspíš ani nedočkal, protože přišlo rovnou léto. Čekání na jaro je totiž název nejnovější kuchařky z řady kuchařek od Florentýny.]]></description>
 		</item>
 	</channel>
 </rss>

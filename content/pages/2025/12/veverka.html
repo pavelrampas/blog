@@ -1,0 +1,32 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Veverka{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Jedna podzimní fotka veverky.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Veverka</h2>
+    <p class="article-meta">
+        <time datetime="2025-12-07">07. 12. 2025</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            <a href="/kategorie/fotky/">Fotky</a>
+        </span>
+    </p>
+    <p>
+        Opožděně jedna fotka veverky z&nbsp;podzimu.
+    </p>
+    <p>
+        <a href="/img/2025/12/veverka/veverka.jpg">
+            <img alt="Veverka" src="/img/2025/12/veverka/veverka-580.jpg" class="img-responsive" width="439" height="580">
+        </a>
+    </p>
+</article>
+{{ macros::navigation(
+    prev_url="/2025/11/kalendar-2026/",
+    prev_text="«&nbsp;Kalendář 2026",
+    next_url="",
+    next_text=""
+) }}
+<section id="comments" class="hide" data-article-id="202512070"></section>
+{% endblock content %}
