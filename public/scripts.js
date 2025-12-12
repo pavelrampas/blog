@@ -248,12 +248,12 @@ function createCommentElement(comment) {
 // Function to format comment count text
 function formatCommentCount(count) {
     if (count === 0) {
-        return '0 komentářů';
+        return '0&nbsp;komentářů';
     } else if (count === 1) {
-        return '1 komentář';
+        return '1&nbsp;komentář';
     } else if (count === 2 || count === 3 || count === 4) {
-        return count + ' komentáře';
+        return count + '&nbsp;komentáře';
     } else {
-        return count + ' komentářů';
+        return count + '&nbsp;komentářů';
     }
 }
