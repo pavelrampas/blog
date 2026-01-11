@@ -1,0 +1,34 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Sčítání na krmítku 2026{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Sčítání na krmítku 2026.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Sčítání na krmítku 2026</h2>
+    <p class="article-meta">
+        <time datetime="2026-01-11">11. 01. 2026</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            Kategorie:
+            <a href="/kategorie/internet/">Internet</a>,
+            <a href="/kategorie/zahrada/">Zahrada</a>
+        </span>
+    </p>
+    <p>
+        Moje výsledky z&nbsp;letošní <a href="https://ptacihodinka.birdlife.cz/" target="_blank" rel="noopener noreferrer">ptačí hodinky</a>.
+    </p>
+    <p>
+        <a href="/img/2026/01/scitani-na-krmitku-2026/ptaci-hodinka-2026-580.jpg">
+            <img alt="ptačí hodinka" src="/img/2026/01/scitani-na-krmitku-2026/ptaci-hodinka-2026.jpg" class="img-responsive" width="580" height="725">
+        </a>
+    </p>
+</article>
+{{ macros::navigation(
+    prev_url="/2025/12/veverka/",
+    prev_text="«&nbsp;Veverka",
+    next_url="",
+    next_text=""
+) }}
+<section id="comments" class="hide" data-article-id="202601110"></section>
+{% endblock content %}

@@ -2,7 +2,7 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://blog.pavelrampas.cz</loc>
-        <lastmod>2025-12-07T22:00:00+00:00</lastmod>
+        <lastmod>2026-01-11T22:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2013/</loc>
@@ -49,6 +49,10 @@
         <lastmod>2025-07-10T22:00:00+00:00</lastmod>
     </url>
     <url>
+        <loc>https://blog.pavelrampas.cz/2026/</loc>
+        <lastmod>2026-01-11T22:00:00+00:00</lastmod>
+    </url>
+    <url>
         <loc>https://blog.pavelrampas.cz/kategorie/akce/</loc>
         <lastmod>2024-03-24T20:00:00+00:00</lastmod>
     </url>
@@ -58,7 +62,7 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/internet/</loc>
-        <lastmod>2025-11-08T22:00:00+00:00</lastmod>
+        <lastmod>2026-01-11T22:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/kalendar/</loc>
@@ -90,11 +94,15 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/zahrada/</loc>
-        <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+        <lastmod>2026-01-11T22:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/fotky/</loc>
         <lastmod>2025-12-07T22:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://blog.pavelrampas.cz/2026/01/scitani-na-krmitku-2026/</loc>
+        <lastmod>2026-01-11T22:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2025/12/veverka/</loc>
