@@ -1,0 +1,34 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Velikonoční beránek{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Tak jsem se zase pustil do pečení beránka.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Velikonoční beránek</h2>
+    <p class="article-meta">
+        <time datetime="2026-04-05">05. 04. 2026</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            Kategorie:
+            <a href="/kategorie/vareni/">Vaření</a>
+        </span>
+    </p>
+    <p>
+        Tak jsem se zase pustil do pečení beránka. Letos s&nbsp;novu silikonovou formou, která je větší než jsem myslel, takže mi nevyšlo těsto.
+        Ale až na kousek chybějící hlavy to nevypadá špatně.
+    </p>
+    <p>
+        <a href="/img/2026/04/velikonocni-beranek/velikonocni-beranek.jpg">
+            <img alt="Velikonoční beránek" src="/img/2026/04/velikonocni-beranek/velikonocni-beranek-580.jpg" class="img-responsive" width="580" height="341">
+        </a>
+    </p>
+</article>
+{{ macros::navigation(
+    prev_url="/2026/01/scitani-na-krmitku-2026/",
+    prev_text="«&nbsp;Sčítání na krmítku 2026",
+    next_url="",
+    next_text=""
+) }}
+<section id="comments" class="hide" data-article-id="202604050"></section>
+{% endblock content %}
