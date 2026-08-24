@@ -1,0 +1,44 @@
+{% import "macros/macros.html" as macros %}
+{% extends "templates/layout.html" %}
+{% block title %}Tábor 2026{% endblock title %}
+{% block title_separator %} - {% endblock title_separator %}
+{% block description %}Pár fotek z tábora 2026.{% endblock description %}
+{% block content %}
+<article>
+    <h2>Tábor 2026</h2>
+    <p class="article-meta">
+        <time datetime="2026-08-24">24. 08. 2026</time>
+        <span class="article-meta-separator">|</span>
+        <span class="article-meta-categories">
+            Kategorie:
+            <a href="/kategorie/akce/">Akce</a>,
+            <a href="/kategorie/fotky/">Fotky</a>
+        </span>
+    </p>
+    <p>
+        Pár fotek z&nbsp;tábora.
+    </p>
+    <p>
+        <a href="/img/2026/08/tabor-2026/pomnenka.jpg">
+            <img alt="Pomněnka" src="/img/2026/08/tabor-2026/pomnenka-580.jpg" class="img-responsive" width="580" height="786">
+        </a>
+    </p>
+    <p>
+        <a href="/img/2026/08/tabor-2026/krava.jpg">
+            <img alt="Kráva" src="/img/2026/08/tabor-2026/krava-580.jpg" class="img-responsive" width="580" height="387">
+        </a>
+    </p>
+    <p>
+        <a href="/img/2026/08/tabor-2026/kravy.jpg">
+            <img alt="Krávy" src="/img/2026/08/tabor-2026/kravy-580.jpg" class="img-responsive" width="580" height="358">
+        </a>
+    </p>
+</article>
+{{ macros::navigation(
+    prev_url="/2026/04/velikonocni-beranek/",
+    prev_text="«&nbsp;Velikonoční beránek",
+    next_url="",
+    next_text=""
+) }}
+<section id="comments" class="hide" data-article-id="202608240"></section>
+{% endblock content %}
