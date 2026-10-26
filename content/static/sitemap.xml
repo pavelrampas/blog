@@ -2,7 +2,7 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://blog.pavelrampas.cz</loc>
-        <lastmod>2026-08-24T21:00:00+00:00</lastmod>
+        <lastmod>2026-10-26T23:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2013/</loc>
@@ -50,7 +50,7 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2026/</loc>
-        <lastmod>2026-08-24T21:00:00+00:00</lastmod>
+        <lastmod>2026-10-26T23:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/strana/1/</loc>
@@ -126,7 +126,7 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/notebook/</loc>
-        <lastmod>2024-03-24T20:00:00+00:00</lastmod>
+        <lastmod>2026-10-26T23:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/raspberry-pi/</loc>
@@ -134,7 +134,7 @@
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/ruzne/</loc>
-        <lastmod>2025-04-28T21:00:00+00:00</lastmod>
+        <lastmod>2026-10-26T23:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/vareni/</loc>
@@ -147,6 +147,10 @@
     <url>
         <loc>https://blog.pavelrampas.cz/kategorie/fotky/</loc>
         <lastmod>2026-08-24T21:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://blog.pavelrampas.cz/2026/10/pracovni-stul/</loc>
+        <lastmod>2026-10-26T23:00:00+00:00</lastmod>
     </url>
     <url>
         <loc>https://blog.pavelrampas.cz/2026/08/tabor-2026/</loc>
