@@ -5,8 +5,15 @@
 		<atom:link href="https://blog.pavelrampas.cz/rss.xml" rel="self" type="application/rss+xml"/>
 		<link>https://blog.pavelrampas.cz</link>
 		<description>Pájovo osobní blog o všem možném. Prostě co mě zrovna napadne.</description>
-		<lastBuildDate>Mon, 26 Oct 2026 23:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 31 Oct 2026 23:00:00 +0000</lastBuildDate>
 		<language>cs-CZ</language>
+		<item>
+			<title>Ptáci v září</title>
+			<link>https://blog.pavelrampas.cz/2026/10/ptaci-v-zari/</link>
+			<guid isPermaLink="false">https://blog.pavelrampas.cz/2026/10/ptaci-v-zari/</guid>
+			<pubDate>Sat, 31 Oct 2026 23:00:00 +0000</pubDate>
+			<description><![CDATA[Pár fotek ptáků ze září.]]></description>
+		</item>
 		<item>
 			<title>Pracovní stůl</title>
 			<link>https://blog.pavelrampas.cz/2026/10/pracovni-stul/</link>
@@ -69,13 +76,6 @@
 			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/04/velikonocni-beranek/</guid>
 			<pubDate>Mon, 21 Apr 2025 20:00:00 +0000</pubDate>
 			<description><![CDATA[Loni jsem zkoušel malého. Tak letos jsem se pustil do velkého. Až na ulomené uši a trochu uloupnutý čumák se celkem povedl.]]></description>
-		</item>
-		<item>
-			<title>Evoluce Orbit</title>
-			<link>https://blog.pavelrampas.cz/2025/03/evoluce-orbit/</link>
-			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/03/evoluce-orbit/</guid>
-			<pubDate>Sat, 29 Mar 2025 16:00:00 +0000</pubDate>
-			<description><![CDATA[Jak šel čas s balením Orbit v posledních letech.]]></description>
 		</item>
 	</channel>
 </rss>
