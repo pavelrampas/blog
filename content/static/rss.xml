@@ -5,8 +5,15 @@
 		<atom:link href="https://blog.pavelrampas.cz/rss.xml" rel="self" type="application/rss+xml"/>
 		<link>https://blog.pavelrampas.cz</link>
 		<description>Pájovo osobní blog o všem možném. Prostě co mě zrovna napadne.</description>
-		<lastBuildDate>Sat, 31 Oct 2026 23:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 7 Nov 2026 22:00:00 +0000</lastBuildDate>
 		<language>cs-CZ</language>
+		<item>
+			<title>Kalendář 2027</title>
+			<link>https://blog.pavelrampas.cz/2026/11/kalendar-2027/</link>
+			<guid isPermaLink="false">https://blog.pavelrampas.cz/2026/11/kalendar-2027/</guid>
+			<pubDate>Sat, 7 Nov 2026 22:00:00 +0000</pubDate>
+			<description><![CDATA[Kalendáře na rok 2027 jsou tady a nejen to. V podstatě jsou tady kalendáře na všechny další roky.]]></description>
+		</item>
 		<item>
 			<title>Ptáci v září</title>
 			<link>https://blog.pavelrampas.cz/2026/10/ptaci-v-zari/</link>
@@ -69,13 +76,6 @@
 			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/04/trifazove-buzeni/</guid>
 			<pubDate>Mon, 28 Apr 2025 21:00:00 +0000</pubDate>
 			<description><![CDATA[V knize Proč spíme, kterou jsem četl před pár lety, byla pravidla pro lepší spánek, ale nebylo tam popsané jak se lépe budit. Tak jsem si vybudoval svůj systém třífázového buzení.]]></description>
-		</item>
-		<item>
-			<title>Velikonoční beránek</title>
-			<link>https://blog.pavelrampas.cz/2025/04/velikonocni-beranek/</link>
-			<guid isPermaLink="false">https://blog.pavelrampas.cz/2025/04/velikonocni-beranek/</guid>
-			<pubDate>Mon, 21 Apr 2025 20:00:00 +0000</pubDate>
-			<description><![CDATA[Loni jsem zkoušel malého. Tak letos jsem se pustil do velkého. Až na ulomené uši a trochu uloupnutý čumák se celkem povedl.]]></description>
 		</item>
 	</channel>
 </rss>
